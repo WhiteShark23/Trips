@@ -1,0 +1,54 @@
+.menu-list {
+  @include reset-list;
+
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  left: 0;
+  background-color: orange;
+  display: grid;
+  grid-template-columns: 205px auto 142px;
+  justify-content: space-between;
+  align-items: center;
+
+  &--footer {
+    position: static;
+    background-color: transparent;
+  }
+}
+
+.menu-list__item {
+  use {
+    fill: $color-default-white;
+  }
+
+  @include hover-focus {
+    use {
+      opacity: 0.7;
+    }
+  }
+
+  @include active {
+    use {
+      opacity: 0.5;
+    }
+  }
+
+  &--logo-footer {
+    use {
+      fill: $color-elephant;
+    }
+
+    @include hover-focus {
+      use {
+        opacity: 0.7;
+      }
+    }
+
+    @include active {
+      use {
+        opacity: 0.5;
+      }
+    }
+  }
+}

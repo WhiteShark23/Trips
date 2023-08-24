@@ -1,0 +1,35 @@
+.social {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.social__item {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: 1px solid rgba(45, 56, 63, 0.3);
+
+    use {
+      fill: $color-elephant;
+    }
+
+    @include hover-focus {
+      border-color: $color-elephant;
+    }
+
+    @include active {
+      background-color: $color-navy-blue;
+      border-color: $color-navy-blue;
+
+      use {
+        fill: $color-default-white;
+      }
+    }
+  }
+}

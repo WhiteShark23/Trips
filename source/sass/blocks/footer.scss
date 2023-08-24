@@ -1,0 +1,27 @@
+.footer {
+  padding: 30px 0;
+}
+
+.footer__social {
+  margin-bottom: 20px;
+}
+
+.footer__privacy {
+  display: flex;
+  justify-content: center;
+
+  a {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    color: $color-elephant;
+
+    @include hover-focus {
+      opacity: 0.7;
+    }
+
+    @include active {
+      opacity: 0.5;
+    }
+  }
+}

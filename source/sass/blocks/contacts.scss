@@ -1,0 +1,35 @@
+.contacts {
+  @include reset-list;
+}
+
+.contacts__item {
+  a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    outline: none;
+    color: $color-default-white;
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+  }
+
+  &--footer {
+    a {
+      color: $color-elephant;
+
+      @include hover-focus {
+        color: $color-resolution-blue;
+      }
+
+      @include active {
+        color: $color-navy-blue;
+      }
+    }
+  }
+}

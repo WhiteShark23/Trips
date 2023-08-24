@@ -1,0 +1,56 @@
+.navigation {
+  @include reset-style;
+}
+
+.navigation__list {
+  @include reset-list;
+
+  display: flex;
+  gap: 20px;
+  max-width: 600px;
+  margin-top: -6px;
+}
+
+.navigation__item {
+  a {
+    @include reset-style;
+
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $color-default-white;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 3px 5px;
+
+    @include hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    @include focus {
+      border-color: $color-default-white;
+    }
+
+    @include active {
+      border-color: transparent;
+    }
+  }
+
+  &--footer {
+    a {
+      color: $color-elephant;
+
+      @include hover {
+        border-bottom: 1px solid $color-elephant;
+      }
+
+      @include focus {
+        border-color: $color-elephant;
+      }
+
+      @include active {
+        border-color: transparent;
+      }
+    }
+  }
+}
