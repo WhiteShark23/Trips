@@ -5,15 +5,48 @@
   width: 100%;
   top: 40px;
   left: 0;
-  background-color: orange;
   display: grid;
   grid-template-columns: 205px auto 142px;
   justify-content: space-between;
   align-items: center;
 
+  &--header {
+    @include vp-1199 {
+      top: 30px;
+      grid-template-areas: "nav logo phone";
+      grid-template-columns: 126px auto 126px;
+      padding: 0 45px;
+
+      .show-menu & {
+        background-color: $color-default-white;
+        align-items: start;
+      }
+    }
+
+    @include vp-767 {
+      top: 15px;
+      grid-template-areas: "nav logo"
+        "nav phone";
+      grid-template-columns: auto 112px;
+      grid-template-rows: 34px auto;
+      align-items: start;
+      padding: 0 15px;
+    }
+  }
+
   &--footer {
     position: static;
     background-color: transparent;
+
+    @include vp-1199 {
+      grid-template-columns: 144px auto;
+      margin-bottom: 37px;
+    }
+
+    @include vp-767 {
+      grid-template-areas: "footer-logo"
+        "footer-menu";
+    }
   }
 }
 
@@ -34,6 +67,40 @@
     }
   }
 
+  &--nav {
+    @include vp-1199 {
+      grid-area: nav;
+    }
+  }
+
+  &--logo {
+    @include vp-1199 {
+      grid-area: logo;
+
+      svg {
+        width: 144px;
+        height: 44px;
+      }
+    }
+
+    @include vp-767 {
+      svg {
+        width: 112px;
+        height: 34px;
+      }
+    }
+  }
+
+  &--phone {
+    @include vp-1199 {
+      grid-area: phone;
+
+      .show-menu & {
+        padding-top: 14px;
+      }
+    }
+  }
+
   &--logo-footer {
     use {
       fill: $color-elephant;
@@ -48,6 +115,35 @@
     @include active {
       use {
         opacity: 0.5;
+      }
+    }
+
+    @include vp-1199 {
+      width: 118px;
+      height: 44px;
+
+      svg {
+        width: 118px;
+        height: 44px;
+      }
+    }
+
+    @include vp-767 {
+      grid-area: footer-logo;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--footer-menu {
+    @include vp-767 {
+      grid-area: footer-menu;
+    }
+  }
+
+  @include vp-1199 {
+    .show-menu & {
+      use {
+        fill: $color-elephant;
       }
     }
   }

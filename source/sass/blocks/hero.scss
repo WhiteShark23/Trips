@@ -1,0 +1,135 @@
+.hero__slide {
+  display: grid;
+  grid-template-columns: 769px auto;
+  padding: 182px 0 80px;
+
+  &--kamchatka {
+    grid-template-columns: 806px auto;
+  }
+
+  &--altaic {
+    grid-template-columns: 944px auto;
+  }
+}
+
+.hero__slide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.hero__list {
+  @include reset-list;
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    @include reset-style;
+
+    font-size: 77px;
+    font-weight: 800;
+    line-height: 77px;
+    color: $color-default-white;
+    margin-bottom: 25px;
+  }
+
+  p {
+    @include reset-style;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-default-white;
+    max-width: 464px;
+    margin-bottom: 35px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: $color-default-white;
+    background-color: $color-navy-blue;
+    outline: none;
+    border: 1px solid transparent;
+    width: 220px;
+    padding: 20px;
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      color: $color-resolution-blue;
+      border-color: $color-resolution-blue;
+    }
+
+    @include active {
+      background-color: $color-resolution-blue;
+      color: $color-default-white;
+      border-color: $color-resolution-blue;
+    }
+  }
+}
+
+.hero__btn-list {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: start;
+  gap: 10px;
+}
+
+.hero__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero__block-right {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  padding-top: 119px;
+  margin-left: -51px;
+
+  &--kamchatka {
+    gap: 13px;
+    padding-top: 20px;
+    margin-left: -16px;
+  }
+}
+
+.hero__pagination {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 46px;
+  gap: 15px;
+
+
+  span {
+    width: 10px;
+    height: 10px;
+    border: 1px solid $color-default-white;
+  }
+}
+
+.hero__audio {
+  iframe {
+    width: 340px;
+    height: 220px;
+  }
+}

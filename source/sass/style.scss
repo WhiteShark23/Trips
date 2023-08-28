@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper.scss";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -22,11 +23,14 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/header.scss";
 @import "blocks/menu-list.scss";
 @import "blocks/navigation.scss";
 @import "blocks/contacts.scss";
 @import "blocks/social.scss";
 @import "blocks/footer.scss";
+@import "blocks/hero.scss";
+@import "blocks/video.scss";
 
 // ---------------------------------
 

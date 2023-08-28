@@ -1,5 +1,13 @@
 .navigation {
   @include reset-style;
+
+  .show-menu & {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    padding-top: 11px;
+  }
 }
 
 .navigation__list {
@@ -9,6 +17,52 @@
   gap: 20px;
   max-width: 600px;
   margin-top: -6px;
+
+  &--header {
+    @include vp-1199 {
+      display: none;
+
+      @include vp-1199 {
+        .show-menu & {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  &--footer {
+    flex-direction: column;
+    max-height: 80px;
+    flex-wrap: wrap;
+    gap: 15px 81px;
+  }
+}
+
+.navigation__toggle {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    svg {
+      .show-menu & {
+        display: none;
+      }
+
+      &:last-child {
+        display: none;
+
+        .show-menu & {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .navigation__item {
@@ -22,6 +76,16 @@
     border: 1px solid transparent;
     outline: none;
     padding: 3px 5px;
+
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 700;
+    }
+
+    .show-menu & {
+      color: $color-elephant;
+    }
 
     @include hover {
       border-bottom: 1px solid $color-default-white;
@@ -37,8 +101,16 @@
   }
 
   &--footer {
+    font-size: 14px;
+    line-height: 14px;
+
     a {
       color: $color-elephant;
+
+      @include vp-1199 {
+        font-weight: 400;
+        padding: 0;
+      }
 
       @include hover {
         border-bottom: 1px solid $color-elephant;

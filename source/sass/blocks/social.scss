@@ -5,6 +5,10 @@
   grid-template-columns: repeat(3, 30px);
   justify-content: center;
   gap: 15px;
+
+  @include vp-767 {
+    justify-content: start;
+  }
 }
 
 .social__item {
