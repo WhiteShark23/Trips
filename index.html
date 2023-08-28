@@ -16,19 +16,27 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header nojs">
         <div class="container">
-          <ul class="menu-list">
-            <li class="menu-list__item">
+          <ul class="menu-list menu-list--header">
+            <li class="menu-list__item menu-list__item--logo">
               <a href="index.html" aria-label="Логотип.">
                 <svg width="205" height="62">
                   <use href="img/sprite.svg#lifetour"></use>
                 </svg>
               </a>
             </li>
-            <li class="menu-list__item">
+            <li class="menu-list__item menu-list__item--nav">
               <nav class="navigation">
-                <ul class="navigation__list">
+                <button class="navigation__toggle js-toggle" type="button" aria-label="Открыть/закрыть меню.">
+                  <svg width="22" height="22">
+                    <use href="img/sprite.svg#menu"></use>
+                  </svg>
+                  <svg width="22" height="22">
+                    <use href="img/sprite.svg#cross"></use>
+                  </svg>
+                </button>
+                <ul class="navigation__list navigation__list--header">
                   <li class="navigation__item">
                     <a href="#nowhere">Туры</a>
                   </li>
@@ -50,7 +58,7 @@
                 </ul>
               </nav>
             </li>
-            <li class="menu-list__item">
+            <li class="menu-list__item menu-list__item--phone">
               <ul class="contacts">
                 <li class="contacts__item">
                   <a href="tel:+78007253232">8 800 725 32 32</a>
@@ -61,8 +69,190 @@
         </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
+        <section class="hero">
+          <div class="swiper hero__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container container--hero">
+                  <div class="hero__slide">
+                    <div class="hero__slide-info">
+                      <ul class="hero__list">
+                        <li class="hero__item">
+                          <h2>Захватывающие вершины Кавказа</h2>
+                        </li>
+                        <li class="hero__item">
+                          <p>
+                            В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие
+                            ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.
+                          </p>
+                        </li>
+                        <li class="hero__item">
+                          <a href="#nowhere">Смотреть тур</a>
+                        </li>
+                      </ul>
+                      <ul class="hero__btn-list">
+                        <li class="hero__btn-item">
+                          <button class="btn btn--hero" type="button">
+                            <svg width="12" height="12">
+                              <use href="img/sprite.svg#crescent"></use>
+                            </svg>
+                            <span>6 дней/5 ночей</span>
+                          </button>
+                        </li>
+                        <li class="hero__btn-item">
+                          <button class="btn btn--hero" type="button">
+                            <svg width="12" height="12">
+                              <use href="img/sprite.svg#level"></use>
+                            </svg>
+                            <span>Высокая сложность</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="hero__block-right">
+                      <div class="video" data-video>
+                        <div class="video__player" id="9TZXsZItgdw" data-youtube></div>
+                        <a class="video__control" href="https://youtube.com/embed/9TZXsZItgdw" data-control>
+                          <span class="visually-hidden">Проиграть видео.</span>
+                        </a>
+                      </div>
+                      <div class="swiper-pagination hero__pagination"></div>
+                    </div>
+                    <div class="hero__img">
+                      <picture>
+                        <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
+                        <source type="image/webp" srcset="img/сaucasus.webp 1x, img/сaucasus@2x.webp 2x">
+                        <!-- <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"> -->
+                        <img src="img/сaucasus.png" srcset="img/сaucasus@2x.png 2x" alt="Восхождение на гору." width="1440" height="800">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container container--hero">
+                  <div class="hero__slide hero__slide--kamchatka">
+                    <div class="hero__slide-info">
+                      <ul class="hero__list">
+                        <li class="hero__item">
+                          <h2>Невероятная природа Камчатки</h2>
+                        </li>
+                        <li class="hero__item">
+                          <p>
+                            Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие
+                            по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.
+                          </p>
+                        </li>
+                        <li class="hero__item">
+                          <a href="#nowhere">Смотреть тур</a>
+                        </li>
+                      </ul>
+                      <ul class="hero__btn-list">
+                        <li class="hero__btn-item">
+                          <button class="btn btn--hero" type="button">
+                            <svg width="12" height="12">
+                              <use href="img/sprite.svg#crescent"></use>
+                            </svg>
+                            <span>9 дней/10 ночей</span>
+                          </button>
+                        </li>
+                        <li class="hero__btn-item">
+                          <button class="btn btn--hero" type="button">
+                            <svg width="12" height="12">
+                              <use href="img/sprite.svg#level"></use>
+                            </svg>
+                            <span>Средняя сложность</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="hero__block-right hero__block-right--kamchatka">
+                      <div class="hero__photographs">
+                        <picture>
+                          <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+                          <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
+                          <source type="image/webp" srcset="img/photographs-hero.webp 1x, img/photographs-hero@2x.webp 2x">
+                          <!-- <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                          <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"> -->
+                          <img src="img/photographs-hero.png" srcset="img/photographs-hero@2x.png 2x" alt="Фотоснимки туристов." width="410" height="459" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="swiper-pagination hero__pagination"></div>
+                    </div>
+                    <div class="hero__img">
+                      <picture>
+                        <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
+                        <source type="image/webp" srcset="img/kamchatka.webp 1x, img/kamchatka@2x.webp 2x">
+                        <!-- <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"> -->
+                        <img src="img/kamchatka.png" srcset="img/kamchatka@2x.png 2x" alt="Горы в облаках." width="1440" height="800" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container container--hero">
+                  <div class="hero__slide hero__slide--altaic">
+                    <div class="hero__slide-info">
+                      <ul class="hero__list">
+                        <li class="hero__item">
+                          <h2>Магические пейзажи Алтайского Края</h2>
+                        </li>
+                        <li class="hero__item">
+                          <p>
+                            Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических
+                            и&nbsp;захватывающих дух ландшафтов Алтайских гор.
+                          </p>
+                        </li>
+                        <li class="hero__item">
+                          <a href="#nowhere">Смотреть тур</a>
+                        </li>
+                      </ul>
+                      <ul class="hero__btn-list">
+                        <li class="hero__btn-item">
+                          <button class="btn btn--hero" type="button">
+                            <svg width="12" height="12">
+                              <use href="img/sprite.svg#crescent"></use>
+                            </svg>
+                            <span>8 дней/7 ночей</span>
+                          </button>
+                        </li>
+                        <li class="hero__btn-item">
+                          <button class="btn btn--hero" type="button">
+                            <svg width="12" height="12">
+                              <use href="img/sprite.svg#level"></use>
+                            </svg>
+                            <span>Легкая сложность</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="hero__block-right">
+                      <div class="hero__audio">
+                        <iframe frameborder="0" src="https://music.yandex.ru/iframe/#album/25474374">
+                        <a href='https://music.yandex.ru/album/25474374'>Про код</a>
+                      </iframe>
+                      </div>
+                      <div class="swiper-pagination hero__pagination"></div>
+                    </div>
+                    <div class="hero__img">
+                      <picture>
+                        <!-- <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x"> -->
+                        <source type="image/webp" srcset="img/altaic.webp 1x, img/altaic@2x.webp 2x">
+                        <!-- <source media="(max-width: 767px)" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x"> -->
+                        <img src="img/altaic.png" srcset="img/altaic@2x.png 2x" alt="Река у подножья гор." width="1440" height="800" loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
@@ -76,7 +266,7 @@
                 </svg>
               </a>
             </li>
-            <li class="menu-list__item">
+            <li class="menu-list__item menu-list__item--footer-menu">
               <nav class="navigation">
                 <ul class="navigation__list navigation__list--footer">
                   <li class="navigation__item navigation__item--footer">
