@@ -4,6 +4,15 @@
   width: 482px;
   height: 317px;
 
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
   iframe {
     position: absolute;
     top: 0;
@@ -54,11 +63,6 @@
     transform: translate(-50%, -50%);
     background-image: url("../img/button-video.svg");
     background-size: cover;
-
-    @include vp-1199 {
-      width: 72px;
-      height: 72px;
-    }
   }
 
   @include hover-focus {

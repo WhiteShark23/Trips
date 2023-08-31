@@ -10,6 +10,35 @@
   &--altaic {
     grid-template-columns: 944px auto;
   }
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 174px 0 72px;
+
+    &--kamchatka {
+      gap: 34px;
+    }
+
+    &--altaic {
+      gap: 69px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 139px 0 22px;
+    gap: 104px;
+
+    &--kamchatka {
+      gap: 84px;
+    }
+
+    &--altaic {
+      gap: 84px;
+    }
+  }
 }
 
 .hero__slide-info {
@@ -25,6 +54,11 @@
   display: flex;
   flex-direction: column;
 
+  @include vp-1199 {
+    align-items: center;
+    text-align: center;
+  }
+
   h2 {
     @include reset-style;
 
@@ -33,6 +67,17 @@
     line-height: 77px;
     color: $color-default-white;
     margin-bottom: 25px;
+
+    @include vp-1199 {
+      font-size: 56px;
+      line-height: 56px;
+      margin-bottom: 15px;
+    }
+
+    @include vp-767 {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
 
   p {
@@ -44,6 +89,18 @@
     color: $color-default-white;
     max-width: 464px;
     margin-bottom: 35px;
+
+    @include vp-1199 {
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+
+    @include vp-767 {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
   }
 
   a {
@@ -59,6 +116,15 @@
     width: 220px;
     padding: 20px;
 
+    @include vp-1199 {
+      width: 206px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 17px;
+    }
+
     @include hover-focus {
       background-color: $color-default-white;
       color: $color-resolution-blue;
@@ -73,6 +139,15 @@
   }
 }
 
+.hero__item {
+  @include vp-767 {
+    &--link {
+      width: 100%;
+      padding: 0 55px;
+    }
+  }
+}
+
 .hero__btn-list {
   @include reset-list;
 
@@ -80,6 +155,10 @@
   grid-template-columns: repeat(2, auto);
   justify-content: start;
   gap: 10px;
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .hero__img {
@@ -109,6 +188,25 @@
     padding-top: 20px;
     margin-left: -16px;
   }
+
+  &--altaic {
+    margin-left: -84px;
+    gap: 146px;
+  }
+
+  @include vp-1199 {
+    margin: 0;
+    padding: 0;
+    gap: 100px;
+
+    &--kamchatka {
+      gap: 51px;
+    }
+
+    &--altaic {
+      gap: 154px;
+    }
+  }
 }
 
 .hero__pagination {
@@ -119,11 +217,23 @@
   min-height: 46px;
   gap: 15px;
 
+  @include vp-1199 {
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    gap: 12px;
+  }
 
   span {
     width: 10px;
     height: 10px;
     border: 1px solid $color-default-white;
+
+    @include vp-767 {
+      width: 8px;
+      height: 8px;
+    }
   }
 }
 
@@ -131,5 +241,21 @@
   iframe {
     width: 340px;
     height: 220px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__photographs {
+  img {
+    @include vp-1199 {
+      width: 100%;
+    }
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }

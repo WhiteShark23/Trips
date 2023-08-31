@@ -3,19 +3,19 @@
 
   position: absolute;
   width: 100%;
-  top: 40px;
+  top: 0;
   left: 0;
   display: grid;
   grid-template-columns: 205px auto 142px;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
 
   &--header {
     @include vp-1199 {
-      top: 30px;
       grid-template-areas: "nav logo phone";
       grid-template-columns: 126px auto 126px;
-      padding: 0 45px;
+      padding: 30px 45px 0;
 
       .show-menu & {
         background-color: $color-default-white;
@@ -24,13 +24,12 @@
     }
 
     @include vp-767 {
-      top: 15px;
       grid-template-areas: "nav logo"
         "nav phone";
       grid-template-columns: auto 112px;
       grid-template-rows: 34px auto;
       align-items: start;
-      padding: 0 15px;
+      padding: 15px 15px 0;
     }
   }
 

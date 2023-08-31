@@ -1,0 +1,11 @@
+.page__hero {
+  margin-bottom: 123px;
+
+  @include vp-1199 {
+    margin-bottom: 88px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 66px;
+  }
+}

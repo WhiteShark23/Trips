@@ -1,0 +1,31 @@
+.swiper-btn {
+  position: static;
+  --swiper-navigation-size: 0;
+  color: transparent;
+  width: 37px;
+  height: 35px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: $color-navy-blue;
+
+  use {
+    fill: $color-default-white;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+
+    use {
+      fill: $color-resolution-blue;
+    }
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+
+    use {
+      fill: $color-default-white;
+    }
+  }
+}

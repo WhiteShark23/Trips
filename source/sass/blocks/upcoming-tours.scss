@@ -1,0 +1,88 @@
+.upcoming-tours__box {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 560px auto;
+  align-items: start;
+  margin-bottom: 54px;
+
+  @include vp-1199 {
+    margin-bottom: 38px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 256px auto;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+}
+
+.upcoming-tours__btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 4px;
+
+  @include vp-1199 {
+    margin-top: -5px;
+  }
+
+  @include vp-767 {
+    margin-left: -44px;
+    margin-top: -3px;
+  }
+}
+
+.upcoming-tours__swiper {
+  margin-bottom: 52px;
+
+  @include vp-1199 {
+    padding: 0 6px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    margin-bottom: 29px;
+  }
+}
+
+.upcoming-tours__link {
+  text-align: center;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    outline: none;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.56px;
+    }
+
+    use {
+      stroke: $color-elephant;
+    }
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+
+      use {
+        stroke: $color-resolution-blue;
+      }
+    }
+
+    @include active {
+      color: $color-navy-blue;
+
+      use {
+        stroke: $color-navy-blue;
+      }
+    }
+  }
+}

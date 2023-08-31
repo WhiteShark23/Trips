@@ -1,0 +1,171 @@
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 206px 20px 28px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
+
+  @include vp-767 {
+    padding-top: 197px;
+  }
+
+  h3 {
+    @include reset-style;
+
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: $color-default-white;
+    padding-right: 69px;
+    margin-bottom: 38px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      z-index: 1;
+      bottom: -17px;
+      left: 0;
+      width: 80px;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    @include vp-1199 {
+      padding-right: 50px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.tour-card__row {
+  @include reset-list;
+
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px 32px;
+  margin-bottom: 23px;
+
+  @include vp-1199 {
+    gap: 14px;
+  }
+
+  @include vp-767 {
+    grid-template-areas: "sun moon"
+      "local local";
+    margin-bottom: 16px;
+  }
+}
+
+.tour-card__item {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    background-color: $color-navy-blue;
+    color: $color-default-white;
+    width: 108px;
+    padding: 9px 25px 8px 24px;
+
+    @include vp-1199 {
+      width: auto;
+      padding: 9px 23px 8px 15px;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    color: $color-default-white;
+  }
+
+  &--sun {
+    span {
+      margin-left: 13.78px;
+
+      @include vp-1199 {
+        margin-left: 8.78px;
+      }
+    }
+
+    @include vp-767 {
+      grid-area: sun;
+
+      span {
+        margin-left: 14px;
+      }
+    }
+  }
+
+  &--moon {
+    span {
+      margin-left: 12.8px;
+    }
+
+    @include vp-767 {
+      grid-area: moon;
+      margin-left: -25px;
+    }
+  }
+
+  &--local {
+    @include vp-767 {
+      grid-area: local;
+    }
+  }
+}
+
+.tour-card__info {
+  @include reset-list;
+
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+
+.tour-card__info-item {
+  h4 {
+    @include reset-style;
+
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 7px;
+  }
+
+  p {
+    @include reset-style;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 13px;
+    color: $color-default-white;
+  }
+}
+
+.tour-card__img {
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
