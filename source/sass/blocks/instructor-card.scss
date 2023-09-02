@@ -44,6 +44,10 @@
     font-weight: 700;
     line-height: 16px;
     width: 60%;
+
+    @include vp-767 {
+      width: 55%;
+    }
   }
 }
 
