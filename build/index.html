@@ -247,7 +247,7 @@
             </div>
           </div>
         </section>
-        <section class="upcoming-tours">
+        <section class="upcoming-tours page__upcoming-tours">
           <div class="container">
             <div class="upcoming-tours__box">
               <div class="title page__title">
@@ -255,12 +255,12 @@
                 <span>Ближайшие туры</span>
               </div>
               <div class="upcoming-tours__btn-wrapper">
-                <div class="swiper-button-prev upcoming-tours-btn swiper-btn">
+                <div class="swiper-button-prev upcoming-tours__btn-prev swiper-btn">
                   <svg width="13" height="8">
                     <use href="img/sprite.svg#btn-prev"></use>
                   </svg>
                 </div>
-                <div class="swiper-button-next upcoming-tours-btn swiper-btn">
+                <div class="swiper-button-next upcoming-tours__btn-next swiper-btn">
                   <svg width="13" height="8">
                     <use href="img/sprite.svg#btn-next"></use>
                   </svg>
@@ -562,6 +562,176 @@
                   <use href="img/sprite.svg#right"></use>
                 </svg>
               </a>
+            </div>
+          </div>
+        </section>
+        <section class="education">
+          <div class="container">
+            <div class="education__text">
+              <div class="title page__title page__title--education">
+                <h2>Обучение</h2>
+                <span>Обучение</span>
+              </div>
+              <p>
+                Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа,
+                Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
+              </p>
+            </div>
+            <div class="education__title">
+              <h3>Наши инструкторы</h3>
+              <div class="education__btn-wrapper">
+                <div class="swiper-button-prev education__btn-prev swiper-btn">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#btn-prev"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next education__btn-next swiper-btn">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#btn-next"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper education__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide instructor-card">
+                  <div class="instructor-card__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/alexander-prokofiev-mobile.webp 1x, img/alexander-prokofiev-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/alexander-prokofiev-tablet.webp 1x, img/alexander-prokofiev-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/alexander-prokofiev.webp 1x, img/alexander-prokofiev@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/alexander-prokofiev-mobile.png 1x, img/alexander-prokofiev-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="img/alexander-prokofiev-tablet.png 1x, img/alexander-prokofiev-tablet@2x.png 2x">
+                      <img src="img/alexander-prokofiev.png" srcset="img/alexander-prokofiev@2x.png 2x" alt="Парень с рюкзаком в горах." width="238" height="212" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="instructor-card__row">
+                    <h4>Александр Прокофьев</h4>
+                    <ul class="instructor-card__social">
+                      <li class="instructor-card__social-item">
+                        <a href="#nowhere" aria-label="Вк.">
+                          <svg width="14" height="8">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                </div>
+                <div class="swiper-slide instructor-card">
+                  <div class="instructor-card__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/svetlana-afinogenov-mobile.webp 1x, img/svetlana-afinogenov-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/svetlana-afinogenov-tablet.webp 1x, img/svetlana-afinogenov-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/svetlana-afinogenov.webp 1x, img/svetlana-afinogenov@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/svetlana-afinogenov-mobile.png 1x, img/svetlana-afinogenov-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="img/svetlana-afinogenov-tablet.png 1x, img/svetlana-afinogenov-tablet@2x.png 2x">
+                      <img src="img/svetlana-afinogenov.png" srcset="img/svetlana-afinogenov@2x.png 2x" alt="Девушка в шапке." width="238" height="212" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="instructor-card__row">
+                    <h4>Светлана Афиногенова</h4>
+                    <ul class="instructor-card__social">
+                      <li class="instructor-card__social-item">
+                        <a href="#nowhere" aria-label="Вк.">
+                          <svg width="14" height="8">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    Видеть мир вокруг, познавать его опасности, находить друг друга,
+                    становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.
+                  </p>
+                </div>
+                <div class="swiper-slide instructor-card">
+                  <div class="instructor-card__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/hope-kolesnichenko-mobile.webp 1x, img/hope-kolesnichenko-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/hope-kolesnichenko-tablet.webp 1x, img/hope-kolesnichenko-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/hope-kolesnichenko.webp 1x, img/hope-kolesnichenko@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/hope-kolesnichenko-mobile.png 1x, img/hope-kolesnichenko-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="img/hope-kolesnichenko-tablet.png 1x, img/hope-kolesnichenko-tablet@2x.png 2x">
+                      <img src="img/hope-kolesnichenko.png" srcset="img/hope-kolesnichenko@2x.png 2x" alt="Женщина на фоне гор и ели." width="238" height="212" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="instructor-card__row">
+                    <h4>Надежда Колесниченко</h4>
+                    <ul class="instructor-card__social">
+                      <li class="instructor-card__social-item">
+                        <a href="#nowhere" aria-label="Вк.">
+                          <svg width="14" height="8">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
+                    и&nbsp;в поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.
+                  </p>
+                </div>
+                <div class="swiper-slide instructor-card">
+                  <div class="instructor-card__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/fedor-kaigorodov-mobile.webp 1x, img/fedor-kaigorodov-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/fedor-kaigorodov-tablet.webp 1x, img/fedor-kaigorodov-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/fedor-kaigorodov.webp 1x, img/fedor-kaigorodov@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/fedor-kaigorodov-mobile.png 1x, img/fedor-kaigorodov-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="img/fedor-kaigorodov-tablet.png 1x, img/fedor-kaigorodov-tablet@2x.png 2x">
+                      <img src="img/fedor-kaigorodov.png" srcset="img/fedor-kaigorodov@2x.png 2x" alt="Парень с размахнутыми руками и открытым ртом." width="238" height="212" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="instructor-card__row">
+                    <h4>Федор Кайгородов</h4>
+                    <ul class="instructor-card__social">
+                      <li class="instructor-card__social-item">
+                        <a href="#nowhere" aria-label="Вк.">
+                          <svg width="14" height="8">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России
+                    побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.
+                  </p>
+                </div>
+                <div class="swiper-slide instructor-card">
+                  <div class="instructor-card__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/hope-kolesnichenko-mobile.webp 1x, img/hope-kolesnichenko-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/hope-kolesnichenko-tablet.webp 1x, img/hope-kolesnichenko-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/hope-kolesnichenko.webp 1x, img/hope-kolesnichenko@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/hope-kolesnichenko-mobile.png 1x, img/hope-kolesnichenko-mobile@2x.png 2x">
+                      <source media="(max-width: 1199px)" srcset="img/hope-kolesnichenko-tablet.png 1x, img/hope-kolesnichenko-tablet@2x.png 2x">
+                      <img src="img/hope-kolesnichenko.png" srcset="img/hope-kolesnichenko@2x.png 2x" alt="Женщина на фоне гор и ели." width="238" height="212" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="instructor-card__row">
+                    <h4>Надежда Колесниченко</h4>
+                    <ul class="instructor-card__social">
+                      <li class="instructor-card__social-item">
+                        <a href="#nowhere" aria-label="Вк.">
+                          <svg width="14" height="8">
+                            <use href="img/sprite.svg#vk"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    Участники говорят, что Надежда ответственная, приятная в&nbsp;общении,
+                    и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

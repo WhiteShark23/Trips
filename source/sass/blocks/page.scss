@@ -9,3 +9,29 @@
     margin-bottom: 66px;
   }
 }
+
+.page__upcoming-tours {
+  margin-bottom: 124px;
+
+  @include vp-1199 {
+    margin-bottom: 85px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 66px;
+  }
+}
+
+.page__title {
+  &--education {
+    margin-bottom: 31px;
+
+    @include vp-1199 {
+      margin-bottom: 21px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 17px;
+    }
+  }
+}
