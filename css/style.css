@@ -1313,7 +1313,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
 }
 
 a {
@@ -2063,6 +2063,14 @@ button,
 
 .page__upcoming-tours {
   margin-bottom: 124px;
+}
+
+.page__education {
+  margin-bottom: 88px;
+}
+
+.page__about-up {
+  margin-bottom: 54px;
 }
 
 .page__title--education {
@@ -2857,7 +2865,8 @@ button,
   width: 100%;
 }
 
-.education__swiper {
+.education__swiper-wrapper {
+  margin-top: 35px;
   margin-bottom: 51px;
 }
 
@@ -2891,7 +2900,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 35px;
 }
 
 .education__title h3 {
@@ -2981,6 +2989,178 @@ button,
   line-height: 24px;
 }
 
+.about-up {
+  overflow-x: clip;
+}
+
+.about-up__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+.about-up__title {
+  padding-top: 35px;
+  margin-bottom: 57px;
+}
+
+.about-up__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -120px;
+}
+
+.about-up__info {
+  width: 585px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.about-up__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 66px;
+}
+
+.about-up__text h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+
+.about-up__text p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.reviews__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.reviews__btn-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+  grid-template-columns: repeat(2, auto);
+  gap: 4px;
+  margin-top: -12px;
+}
+
+.reviews__swiper-wrapper {
+  margin-top: 27px;
+  margin-bottom: 132px;
+  padding-left: calc(100% - 1320px);
+}
+
+.review-card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 258px 1fr;
+  grid-template-columns: 258px 1fr;
+  gap: 30px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  width: 790px;
+  padding: 20px;
+  padding-right: 40px;
+  height: auto;
+}
+
+.review-card p a {
+  color: #ff1553;
+}
+
+.review-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.review-card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-card__text p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.review-card__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-card__title h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.review-card__title span {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.review-card__img img {
+  height: 100%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3033,6 +3213,14 @@ button,
 
   .page__upcoming-tours {
     margin-bottom: 85px;
+  }
+
+  .page__education {
+    margin-bottom: 90px;
+  }
+
+  .page__about-up {
+    margin-bottom: 90px;
   }
 
   .page__title--education {
@@ -3283,17 +3471,14 @@ button,
     margin-bottom: 12px;
   }
 
-  .education__swiper {
+  .education__swiper-wrapper {
+    margin-top: 24px;
     margin-bottom: 44px;
   }
 
   .education__text {
     max-width: 560px;
     margin-bottom: 57px;
-  }
-
-  .education__title {
-    margin-bottom: 24px;
   }
 
   .education__title h3 {
@@ -3378,6 +3563,60 @@ button,
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
+
+  .about-up__title {
+    padding: 0;
+    margin-bottom: 34px;
+  }
+
+  .about-up__img {
+    width: 685px;
+    top: 7px;
+    left: -210px;
+  }
+
+  .about-up__info {
+    width: 324px;
+  }
+
+  .about-up__text-wrapper {
+    gap: 6px;
+    padding-bottom: 0;
+  }
+
+  .about-up__text h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .reviews__btn-wrapper {
+    margin-top: -16px;
+  }
+
+  .reviews__swiper-wrapper {
+    padding-left: calc(100% - 723px);
+  }
+
+  .review-card {
+    -ms-grid-columns: 186px 1fr;
+    grid-template-columns: 186px 1fr;
+    width: 560px;
+    padding-right: 30px;
+  }
+
+  .review-card__info {
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+  }
+
+  .review-card__text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .review-card__title h3 {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1199px) and (max-width: 1199px) {
@@ -3419,6 +3658,10 @@ button,
 
   .page__upcoming-tours {
     margin-bottom: 66px;
+  }
+
+  .page__about-up {
+    margin-bottom: 70px;
   }
 
   .page__title--education {
@@ -3664,7 +3907,7 @@ button,
     margin-bottom: 17px;
   }
 
-  .education__swiper {
+  .education__swiper-wrapper {
     margin-bottom: 38px;
   }
 
@@ -3735,6 +3978,45 @@ button,
   .learning-process__item svg {
     width: 19px;
     height: auto;
+  }
+
+  .about-up__wrapper {
+    padding-top: 375px;
+  }
+
+  .about-up__text-wrapper {
+    gap: 43px;
+  }
+
+  .about-up__text h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .about-up__text p {
+    line-height: 20px;
+  }
+
+  .reviews__btn-wrapper {
+    margin-top: -9px;
+  }
+
+  .reviews__swiper-wrapper {
+    padding-left: calc(100% - 305px);
+    margin-top: 30px;
+  }
+
+  .review-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 290px;
+    gap: 20px;
+    padding: 20px;
   }
 }
 
