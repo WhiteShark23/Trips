@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {getMenuToggle} from './modules/menu-toggle';
-import {initSwiperIntro, initSwiperUpcomingTours, initSwiperEducation} from './modules/init-swiper';
+import {initSwiperIntro, initSwiperUpcomingTours, initSwiperEducation, initSwiperReviews} from './modules/init-swiper';
 import {initVideos} from './modules/init-video';
 // ---------------------------------
 
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideos();
     initSwiperUpcomingTours();
     initSwiperEducation();
+    initSwiperReviews();
     initModals();
     const form = new Form();
     window.form = form;

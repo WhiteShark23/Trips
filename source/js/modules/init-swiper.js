@@ -72,3 +72,23 @@ export const initSwiperEducation = () => {
 
   return swiperEducation;
 };
+
+export const initSwiperReviews = () => {
+  const swiperReviews = new window.Swiper('.reviews__swiper', {
+    breakpoints: {
+      320: {
+        slidesPerView: 'auto',
+        allowTouchMove: true,
+        spaceBetween: 30,
+      },
+      768: {
+        allowTouchMove: false,
+      }},
+    navigation: {
+      nextEl: '.reviews__btn-next',
+      prevEl: '.reviews__btn-prev',
+    },
+  });
+
+  return swiperReviews;
+};

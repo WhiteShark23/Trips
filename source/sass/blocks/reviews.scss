@@ -1,0 +1,34 @@
+.reviews__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 4px;
+  margin-top: -12px;
+
+  @include vp-1199 {
+    margin-top: -16px;
+  }
+
+  @include vp-767 {
+    margin-top: -9px;
+  }
+}
+
+.reviews__swiper-wrapper {
+  margin-top: 27px;
+  margin-bottom: 132px;
+  padding-left: calc(100% - 1320px);
+
+  @include vp-1199 {
+    padding-left: calc(100% - 723px);
+  }
+
+  @include vp-767 {
+    padding-left: calc(100% - 305px);
+    margin-top: 30px;
+  }
+}

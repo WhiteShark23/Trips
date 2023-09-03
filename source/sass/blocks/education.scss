@@ -1,7 +1,9 @@
-.education__swiper {
+.education__swiper-wrapper {
+  margin-top: 35px;
   margin-bottom: 51px;
 
   @include vp-1199 {
+    margin-top: 24px;
     margin-bottom: 44px;
   }
 
@@ -43,11 +45,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 35px;
-
-  @include vp-1199 {
-    margin-bottom: 24px;
-  }
 
   h3 {
     @include reset-style;
