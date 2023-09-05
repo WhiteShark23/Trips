@@ -14,14 +14,6 @@
     @include vp-1199 {
       display: none;
     }
-
-    @include vp-767 {
-      display: block;
-      width: 1px;
-      height: 183px;
-      left: 24px;
-      top: 70px;
-    }
   }
 }
 
@@ -92,9 +84,8 @@
     background-color: $color-navy-blue;
 
     @include vp-767 {
-      top: 36%;
-      left: 10px;
-      transform: translate(-50%);
+      bottom: 8px;
+      left: 4px;
     }
   }
 
@@ -120,6 +111,17 @@
     @include vp-1199 {
       grid-area: map;
       padding-bottom: 24px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: calc(100% + 30px);
+        background-color: rgba(2, 102, 193, 0.10);
+        bottom: 7px;
+        left: 0;
+      }
     }
   }
 
@@ -127,6 +129,17 @@
     @include vp-1199 {
       grid-area: boots;
       padding-bottom: 24px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        height:  45px;
+        width: 1px;
+        background-color: rgba(2, 102, 193, 0.10);
+        bottom: -44px;
+        left: 6px;
+      }
     }
   }
 
@@ -139,11 +152,13 @@
       &::before {
         bottom: auto;
         top: 0;
+      }
+    }
 
-        @include vp-767 {
-          top: 36%;
-          transform: translate(-50%);
-        }
+    @include vp-767 {
+      &::before {
+        bottom: 8px;
+        top: auto;
       }
     }
   }
@@ -159,8 +174,23 @@
         top: 0;
 
         @include vp-767 {
-          top: 36%;
-          transform: translate(-50%);
+          top: auto;
+          bottom: 8px;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        width: calc(100% + 30px);
+        background-color: rgba(2, 102, 193, 0.10);
+        top: 7px;
+        left: 0;
+
+        @include vp-767 {
+          display: none;
         }
       }
     }
@@ -175,6 +205,21 @@
     svg {
       width: 19px;
       height: auto;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: calc(100% + 25px);
+      width: 1px;
+      background-color: rgba(2, 102, 193, 0.10);
+      bottom: -46px;
+      left: 10px;
+    }
+
+    &:last-child::after {
+      display: none;
     }
   }
 }

@@ -1,0 +1,31 @@
+.advantages-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  width: 380px;
+  padding: 40px 20px;
+  height: auto;
+
+  svg {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    @include reset-style;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    @include reset-style;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}

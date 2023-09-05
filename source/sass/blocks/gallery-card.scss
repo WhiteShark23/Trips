@@ -1,0 +1,21 @@
+.gallery-card {
+
+  &--wide {
+    width: 275px;
+  }
+
+  &--mountain {
+    width: 272px;
+  }
+
+  &--forest {
+    width: 276px;
+  }
+
+  &--net {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 298px;
+  }
+}

@@ -1,0 +1,22 @@
+.advantages__title {
+  margin-bottom: 46px;
+  text-align: center;
+
+  span {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.advantages__swiper {
+  margin-bottom: 48px;
+}
+
+.advantages__btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 4px;
+  width: 78px;
+  margin-left: auto;
+  margin-right: auto;
+}

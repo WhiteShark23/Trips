@@ -77,12 +77,13 @@ export const initSwiperReviews = () => {
   const swiperReviews = new window.Swiper('.reviews__swiper', {
     breakpoints: {
       320: {
-        slidesPerView: 'auto',
         allowTouchMove: true,
         spaceBetween: 30,
       },
       768: {
         allowTouchMove: false,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
       }},
     navigation: {
       nextEl: '.reviews__btn-next',
@@ -91,4 +92,31 @@ export const initSwiperReviews = () => {
   });
 
   return swiperReviews;
+};
+
+export const initSwiperAdvantages = () => {
+  const swiperAdvantages = new window.Swiper('.advantages__swiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.advantages__btn-next',
+      prevEl: '.advantages__btn-prev',
+    },
+  });
+
+  return swiperAdvantages;
+};
+
+export const initSwiperGallery = () => {
+  const swiperGallery = new window.Swiper('.gallery__swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 5,
+    navigation: {
+      nextEl: '.gallery__btn-next',
+      prevEl: '.gallery__btn-prev',
+    },
+  });
+
+  return swiperGallery;
 };
