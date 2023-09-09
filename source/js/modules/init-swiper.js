@@ -95,7 +95,17 @@ export const initSwiperReviews = () => {
 };
 
 export const initSwiperAdvantages = () => {
+  const handleMediaChange = (event) => {
+    return event.matches ? swiperAdvantages : swiperAdvantages.destroy();
+  };
+
+  const mediaQuery = window.matchMedia('(min-width: 1199px)');
+  mediaQuery.addEventListener('change', handleMediaChange);
+
   const swiperAdvantages = new window.Swiper('.advantages__swiper', {
+    allowTouchMove: false,
+    initialSlide: 2,
+    centeredSlides: true,
     loop: true,
     slidesPerView: 'auto',
     spaceBetween: 30,
@@ -105,7 +115,7 @@ export const initSwiperAdvantages = () => {
     },
   });
 
-  return swiperAdvantages;
+  return handleMediaChange(mediaQuery);
 };
 
 export const initSwiperGallery = () => {

@@ -1,11 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {getMenuToggle} from './modules/menu-toggle';
 import {initSwiperIntro, initSwiperUpcomingTours, initSwiperEducation, initSwiperReviews, initSwiperAdvantages, initSwiperGallery} from './modules/init-swiper';
 import {initVideos} from './modules/init-video';
+import {initMap} from './modules/init-map';
 // ---------------------------------
-
 window.addEventListener('DOMContentLoaded', () => {
   initSwiperIntro();
   getMenuToggle();
@@ -25,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initSwiperReviews();
     initSwiperAdvantages();
     initSwiperGallery();
-    initModals();
+    initMap();
     const form = new Form();
     window.form = form;
     form.init();
