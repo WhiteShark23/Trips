@@ -118,7 +118,7 @@
         display: block;
         height: 1px;
         width: calc(100% + 30px);
-        background-color: rgba(2, 102, 193, 0.10);
+        background-color: rgba(2, 102, 193, 0.1);
         bottom: 7px;
         left: 0;
       }
@@ -134,9 +134,9 @@
         position: absolute;
         content: "";
         display: block;
-        height:  45px;
+        height: 45px;
         width: 1px;
-        background-color: rgba(2, 102, 193, 0.10);
+        background-color: rgba(2, 102, 193, 0.1);
         bottom: -44px;
         left: 6px;
       }
@@ -185,7 +185,7 @@
         display: block;
         height: 1px;
         width: calc(100% + 30px);
-        background-color: rgba(2, 102, 193, 0.10);
+        background-color: rgba(2, 102, 193, 0.1);
         top: 7px;
         left: 0;
 
@@ -213,7 +213,7 @@
       display: block;
       height: calc(100% + 25px);
       width: 1px;
-      background-color: rgba(2, 102, 193, 0.10);
+      background-color: rgba(2, 102, 193, 0.1);
       bottom: -46px;
       left: 10px;
     }

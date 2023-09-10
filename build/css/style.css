@@ -3283,6 +3283,14 @@ button,
   }
 }
 
+.hero {
+  background-color: #0266c1;
+}
+
+.hero__slide-wrapper {
+  height: auto;
+}
+
 .hero__slide {
   display: -ms-grid;
   display: grid;
@@ -5243,6 +5251,7 @@ button,
   padding-top: 312px;
   padding-bottom: 307px;
   margin-bottom: 60px;
+  background-color: #0266c1;
 }
 @media (max-width: 1199px) {
   .contact-form {
@@ -5370,7 +5379,6 @@ button,
 
 .contact-form__input input {
   background-color: #ffffff;
-  border: 1px solid rgba(2, 102, 193, 0.1);
   padding: 21px 30px;
   font-size: 16px;
   font-weight: 400;
@@ -5448,12 +5456,16 @@ button,
 .contact-form__img {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
+  bottom: 0;
 }
 .contact-form__img img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .connection {
@@ -5650,6 +5662,19 @@ button,
   .connection__item a {
     line-height: 20px;
     max-width: 160px;
+  }
+}
+@media (hover: hover) {
+  .connection__item a:hover:not(:disabled) {
+    color: #1c3374;
+  }
+}
+.connection__item a:focus:not(:disabled) {
+  color: #1c3374;
+}
+@media (hover: hover) {
+  .connection__item a:active:not(:disabled) {
+    color: #0266c1;
   }
 }
 

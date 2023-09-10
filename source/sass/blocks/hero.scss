@@ -1,3 +1,11 @@
+.hero {
+  background-color: $color-navy-blue;
+}
+
+.hero__slide-wrapper {
+  height: auto;
+}
+
 .hero__slide {
   display: grid;
   grid-template-columns: 769px auto;

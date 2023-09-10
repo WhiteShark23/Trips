@@ -141,5 +141,13 @@
       line-height: 20px;
       max-width: 160px;
     }
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
   }
 }
