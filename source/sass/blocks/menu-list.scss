@@ -36,15 +36,18 @@
   &--footer {
     position: static;
     background-color: transparent;
+    padding: 0;
+    margin-bottom: 11px;
 
     @include vp-1199 {
       grid-template-columns: 144px auto;
-      margin-bottom: 37px;
+      margin-bottom: 31px;
     }
 
     @include vp-767 {
       grid-template-areas: "footer-logo"
         "footer-menu";
+      padding-left: 4px;
     }
   }
 }
@@ -129,11 +132,22 @@
 
     @include vp-767 {
       grid-area: footer-logo;
-      margin-bottom: 20px;
+      margin-bottom: 17px;
+
+      svg {
+        width: 114px;
+        height: 34px;
+      }
     }
   }
 
   &--footer-menu {
+    margin-left: -64px;
+
+    @include vp-1199 {
+      margin-left: 0;
+    }
+
     @include vp-767 {
       grid-area: footer-menu;
     }

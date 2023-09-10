@@ -1,9 +1,33 @@
 .footer {
   padding: 30px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-elephant;
+    opacity: 0.2;
+  }
+
+  @include vp-1199 {
+    padding: 40px 0;
+  }
+
+  @include vp-767 {
+    padding: 30px 0;
+  }
 }
 
 .footer__social {
   margin-bottom: 20px;
+
+  @include vp-767 {
+    padding-left: 5px;
+  }
 }
 
 .footer__privacy {
@@ -12,6 +36,7 @@
 
   @include vp-767 {
     justify-content: start;
+    padding-left: 5px;
   }
 
   a {

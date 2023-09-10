@@ -8,10 +8,10 @@ const layer = new window.L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/
 const markerOptions = {
   icon: customIcon,
 };
-const marker = window.L.marker([59.968322, 30.317359], markerOptions);
+const marker = window.L.marker([55.774836, 37.632664], markerOptions);
 const mapOptions = {
-  center: [59.968322, 30.317359],
-  zoom: 100,
+  center: [55.774836, 37.632664],
+  zoom: 16,
 };
 
 export const initMap = () => {
@@ -21,5 +21,3 @@ export const initMap = () => {
 
   return lMap;
 };
-
-

@@ -1,5 +1,20 @@
 .about-up {
   overflow-x: clip;
+  position: relative;
+}
+
+.about-up__img-background {
+  position: absolute;
+  top: -169px;
+  right: -133px;
+
+  @include vp-1440 {
+    right: -13px;
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
 }
 
 .about-up__wrapper {

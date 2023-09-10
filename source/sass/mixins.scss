@@ -56,7 +56,7 @@
 // Desktop first
 
 @mixin vp-1440 {
-  @media (max-width: ($vp-1440 - 1px)) {
+  @media (min-width: ($vp-1440)) {
     @content;
   }
 }

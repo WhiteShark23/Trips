@@ -1,12 +1,38 @@
 .advantages {
-  margin-bottom: 130px;
+  overflow-x: clip;
+  position: relative;
+}
 
-  @include vp-1199 {
-    margin-bottom: 87px;
+.advantages__img-background {
+  position: absolute;
+  top: -235px;
+  left: -155px;
+
+  img {
+    height: 391px;
   }
 
-  @include vp-767 {
-    margin-bottom: 64px;
+  @include vp-1440 {
+    left: -35px;
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  &--right {
+    top: -56px;
+    left: auto;
+    right: -132px;
+
+    img {
+      width: 788px;
+      height: 263px;
+    }
+
+    @include vp-1440 {
+      right: -112px;
+    }
   }
 }
 

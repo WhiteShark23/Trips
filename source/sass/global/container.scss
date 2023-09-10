@@ -38,4 +38,10 @@
   &--form {
     z-index: 1;
   }
+
+  &--upcoming-tours {
+    @include vp-767 {
+      z-index: 1;
+    }
+  }
 }

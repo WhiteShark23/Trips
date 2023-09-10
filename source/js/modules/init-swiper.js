@@ -126,6 +126,12 @@ export const initSwiperGallery = () => {
       nextEl: '.gallery__btn-next',
       prevEl: '.gallery__btn-prev',
     },
+    breakpoints: {
+      1200: {
+        initialSlide: 2,
+        centeredSlides: true,
+      },
+    },
   });
 
   return swiperGallery;
