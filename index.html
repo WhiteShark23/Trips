@@ -248,7 +248,7 @@
           </div>
         </section>
         <section class="upcoming-tours page__upcoming-tours">
-          <div class="container">
+          <div class="container container--upcoming-tours">
             <div class="upcoming-tours__box">
               <div class="title page__title">
                 <h2>Ближайшие туры</h2>
@@ -564,6 +564,20 @@
               </a>
             </div>
           </div>
+          <div class="upcoming-tours__img-background">
+            <picture>
+              <source type="image/webp" srcset="img/cloud.webp 1x, img/cloud@2x.webp 2x">
+              <img src="img/cloud.png" srcset="img/cloud@2x.png 2x" alt="Облака." width="440" height="279">
+            </picture>
+          </div>
+          <div class="upcoming-tours__img-background upcoming-tours__img-background--forest">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/forest-background-mobile.webp 1x, img/forest-background-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/forest-background.webp 1x, img/forest-background@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/forest-background-mobile.png 1x, img/forest-background-mobile@2x.png 2x">
+              <img src="img/forest-background.png" srcset="img/forest-background@2x.png 2x" alt="Лес." width="602" height="1364">
+            </picture>
+          </div>
         </section>
         <section class="education page__education">
           <div class="container">
@@ -805,6 +819,10 @@
               </div>
             </div>
           </div>
+          <div class="about-up__img-background">
+            <source type="image/webp" srcset="img/about-up.webp 1x, img/about-up@2x.webp 2x">
+            <img src="img/about-up.png" srcset="img/about-up@2x.png 2x" alt="Облака." width="640" height="140" loading="lazy">
+          </div>
         </section>
         <section class="reviews">
           <div class="container">
@@ -952,7 +970,15 @@
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages page__advantages">
+          <div class="advantages__img-background">
+            <source type="image/webp" srcset="img/advantages-img.webp 1x, img/advantages-img@2x.webp 2x">
+            <img src="img/advantages-img.png" srcset="img/advantages-img@2x.png 2x" alt="Облака." width="800" height="391">
+          </div>
+          <div class="advantages__img-background advantages__img-background--right">
+            <source type="image/webp" srcset="img/advantages-background.webp 1x, img/advantages-background@2x.webp 2x">
+            <img src="img/advantages-background.png" srcset="img/advantages-background@2x.png 2x" alt="Облака." width="788" height="263">
+          </div>
           <div class="container">
             <div class="title page__title advantages__title">
               <h2>Преимущества</h2>
@@ -1176,7 +1202,7 @@
                       <use href="img/sprite.svg#phone"></use>
                     </svg>
                     <h3>Телефон</h3>
-                    <a href="tel:+78005555555">8-800-555-55-55</a>
+                    <a href="tel:+79837454545">8 983 745 45 45</a>
                   </li>
                   <li class="connection__item">
                     <svg width="26" height="26">
@@ -1187,7 +1213,7 @@
                   </li>
                   <li class="connection__item">
                     <svg width="26" height="26">
-                      <use href="img/sprite.svg#mail"></use>
+                      <use href="img/sprite.svg#pin-stroke"></use>
                     </svg>
                     <h3>Адрес</h3>
                     <a href="https://yandex.ru/maps/?text=г.Москва,пр-тМира,д.14,офис101">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</a>
