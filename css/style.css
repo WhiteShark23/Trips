@@ -3005,6 +3005,14 @@ button,
   opacity: 0.7;
 }
 
+.hero {
+  background-color: #0266c1;
+}
+
+.hero__slide-wrapper {
+  height: auto;
+}
+
 .hero__slide {
   display: -ms-grid;
   display: grid;
@@ -4057,6 +4065,7 @@ button,
   padding-top: 312px;
   padding-bottom: 307px;
   margin-bottom: 60px;
+  background-color: #0266c1;
 }
 
 .contact-form__wrapper {
@@ -4115,7 +4124,6 @@ button,
 
 .contact-form__input input {
   background-color: #ffffff;
-  border: 1px solid rgba(2, 102, 193, 0.1);
   padding: 21px 30px;
   font-size: 16px;
   font-weight: 400;
@@ -4152,13 +4160,17 @@ button,
 .contact-form__img {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
+  bottom: 0;
 }
 
 .contact-form__img img {
   -o-object-fit: cover;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .connection {
@@ -4244,6 +4256,10 @@ button,
   grid-area: link;
   font-size: 16px;
   line-height: 24px;
+}
+
+.connection__item a:focus:not(:disabled) {
+  color: #1c3374;
 }
 
 .map {
@@ -5802,6 +5818,14 @@ button,
 
   .contact-form__input input:active:not(:disabled)::placeholder {
     color: transparent;
+  }
+
+  .connection__item a:hover:not(:disabled) {
+    color: #1c3374;
+  }
+
+  .connection__item a:active:not(:disabled) {
+    color: #0266c1;
   }
 }
 
