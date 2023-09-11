@@ -25,10 +25,22 @@
         flex-direction: column;
         gap: 18px;
       }
+
+      .nojs & {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
     }
 
     @include vp-767 {
-      gap: 12px;
+      .show-menu & {
+        gap: 12px;
+      }
+
+      .nojs & {
+        gap: 12px;
+      }
     }
   }
 
@@ -58,6 +70,10 @@
     padding: 0;
 
     svg {
+      .nojs & {
+        display: none;
+      }
+
       .show-menu & {
         display: none;
       }
@@ -85,27 +101,6 @@
     outline: none;
     padding: 3px 5px;
 
-    @include vp-1199 {
-      font-size: 14px;
-      line-height: 14px;
-      font-weight: 700;
-    }
-
-    .show-menu & {
-      color: $color-elephant;
-      font-size: 16px;
-      line-height: 16px;
-      letter-spacing: 0.64px;
-      text-transform: uppercase;
-      padding: 0;
-
-      @include vp-767 {
-        font-size: 14px;
-        line-height: 14px;
-        letter-spacing: 0.56px;
-      }
-    }
-
     @include hover {
       border-bottom: 1px solid $color-default-white;
     }
@@ -119,14 +114,37 @@
     }
   }
 
+  &--header {
+      @include vp-1199 {
+        a {
+          color: $color-elephant;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 700;
+          letter-spacing: 0.64px;
+          text-transform: uppercase;
+          padding: 0;
+        }
+      }
+
+      @include vp-767 {
+        a {
+          font-size: 14px;
+          line-height: 14px;
+          letter-spacing: 0.56px;
+        }
+      }
+    }
+
   &--footer {
-    font-size: 14px;
     line-height: 14px;
 
     a {
       color: $color-elephant;
 
       @include vp-1199 {
+        font-size: 14px;
+        line-height: 14px;
         font-weight: 400;
         padding: 0;
       }
