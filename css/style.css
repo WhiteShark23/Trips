@@ -4256,6 +4256,7 @@ button,
   grid-area: link;
   font-size: 16px;
   line-height: 24px;
+  color: #2d383f;
 }
 
 .connection__item a:focus:not(:disabled) {
