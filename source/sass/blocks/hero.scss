@@ -9,6 +9,7 @@
 .hero__slide {
   display: grid;
   grid-template-columns: 769px auto;
+  height: 100%;
   padding: 182px 0 80px;
 
   &--kamchatka {
@@ -36,16 +37,9 @@
   }
 
   @include vp-767 {
+    min-height: 568px;
+    justify-content: space-between;
     padding: 139px 0 22px;
-    gap: 104px;
-
-    &--kamchatka {
-      gap: 84px;
-    }
-
-    &--altaic {
-      gap: 84px;
-    }
   }
 }
 
@@ -177,7 +171,6 @@
   height: 100%;
 
   img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
   }
