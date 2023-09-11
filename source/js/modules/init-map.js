@@ -4,7 +4,10 @@ const iconOptions = {
   iconSize: [38, 50],
 };
 const customIcon = window.L.icon(iconOptions);
-const layer = new window.L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+const layer = new window.L.TileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+  minZoom: 10,
+  subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+});
 const markerOptions = {
   icon: customIcon,
 };
