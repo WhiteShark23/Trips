@@ -3,7 +3,8 @@
 
 @import "vendor/normalize";
 @import "vendor/swiper.scss";
-@import "vendor/leaflet.scss";
+@import "../../node_modules/leaflet/dist/leaflet";
+// Leaflet 1.7.1
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
