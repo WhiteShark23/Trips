@@ -5,8 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 50px;
-    padding-top: 11px;
+    gap: 57px;
   }
 }
 
@@ -16,23 +15,29 @@
   display: flex;
   gap: 20px;
   max-width: 600px;
-  margin-top: -6px;
 
   &--header {
     @include vp-1199 {
       display: none;
 
-      @include vp-1199 {
-        .show-menu & {
-          display: flex;
-          flex-direction: column;
-        }
+      .show-menu & {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
       }
+    }
+
+    @include vp-767 {
+      gap: 12px;
     }
   }
 
   &--footer {
     flex-wrap: wrap;
+
+    @include vp-1199 {
+      margin-top: -7px;
+    }
 
     @include vp-767 {
       flex-direction: column;
@@ -88,6 +93,17 @@
 
     .show-menu & {
       color: $color-elephant;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 0.64px;
+      text-transform: uppercase;
+      padding: 0;
+
+      @include vp-767 {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.56px;
+      }
     }
 
     @include hover {

@@ -15,7 +15,7 @@
     @include vp-1199 {
       grid-template-areas: "nav logo phone";
       grid-template-columns: 126px auto 126px;
-      padding: 30px 45px 0;
+      padding: 30px 45px 66px;
 
       .show-menu & {
         background-color: $color-default-white;
@@ -29,7 +29,7 @@
       grid-template-columns: auto 112px;
       grid-template-rows: 34px auto;
       align-items: start;
-      padding: 15px 15px 0;
+      padding: 15px 15px 45px;
     }
   }
 
@@ -72,6 +72,10 @@
   &--nav {
     @include vp-1199 {
       grid-area: nav;
+
+      .show-menu & {
+        padding-top: 11px;
+      }
     }
   }
 
@@ -98,7 +102,7 @@
       grid-area: phone;
 
       .show-menu & {
-        padding-top: 14px;
+        padding-top: 3px;
       }
     }
   }
@@ -132,7 +136,7 @@
 
     @include vp-767 {
       grid-area: footer-logo;
-      margin-bottom: 17px;
+      margin-bottom: 11px;
 
       svg {
         width: 114px;

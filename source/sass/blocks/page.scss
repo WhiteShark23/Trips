@@ -2,7 +2,7 @@
   margin-bottom: 123px;
 
   @include vp-1199 {
-    margin-bottom: 88px;
+    margin-bottom: 89px;
   }
 
   @include vp-767 {
@@ -61,6 +61,18 @@
 
   @include vp-1199 {
     margin-bottom: 87px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 64px;
+  }
+}
+
+.contact-form {
+  margin-bottom: 60px;
+
+  @include vp-1199 {
+    margin-bottom: 86px;
   }
 
   @include vp-767 {
