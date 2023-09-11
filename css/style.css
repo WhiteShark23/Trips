@@ -2414,6 +2414,11 @@ button,
   padding-top: 40px;
 }
 
+.show-menu .menu-list--header {
+  -webkit-box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
+}
+
 .menu-list--footer {
   position: static;
   background-color: transparent;
@@ -4002,6 +4007,8 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
+    -webkit-box-shadow: 0 420px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 420px 0 rgba(0, 0, 0, 0.5);
   }
 
   .nojs .menu-list--header {
