@@ -18,9 +18,12 @@ const mapOptions = {
 };
 
 export const initMap = () => {
-  const lMap = new window.L.Map(map, mapOptions);
-  lMap.addLayer(layer);
-  marker.addTo(lMap);
+  let lMap;
 
+  if (map) {
+    lMap = new window.L.Map(map, mapOptions);
+    lMap.addLayer(layer);
+    marker.addTo(lMap);
+  }
   return lMap;
 };
