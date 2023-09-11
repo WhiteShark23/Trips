@@ -2774,6 +2774,10 @@ button,
   margin-bottom: 130px;
 }
 
+.contact-form {
+  margin-bottom: 60px;
+}
+
 .header {
   z-index: 2;
 }
@@ -2842,8 +2846,7 @@ button,
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  gap: 50px;
-  padding-top: 11px;
+  gap: 57px;
 }
 
 .navigation__list {
@@ -2855,7 +2858,6 @@ button,
   display: flex;
   gap: 20px;
   max-width: 600px;
-  margin-top: -6px;
 }
 
 .navigation__list--footer {
@@ -2881,6 +2883,11 @@ button,
 
 .show-menu .navigation__item a {
   color: #2d383f;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  padding: 0;
 }
 
 .navigation__item a:focus:not(:disabled) {
@@ -3482,6 +3489,7 @@ button,
 }
 
 .tour-card__img img {
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -4064,7 +4072,6 @@ button,
   position: relative;
   padding-top: 312px;
   padding-bottom: 307px;
-  margin-bottom: 60px;
   background-color: #0266c1;
 }
 
@@ -4355,7 +4362,7 @@ button,
   }
 
   .page__hero {
-    margin-bottom: 88px;
+    margin-bottom: 89px;
   }
 
   .page__upcoming-tours {
@@ -4378,11 +4385,15 @@ button,
     margin-bottom: 87px;
   }
 
+  .contact-form {
+    margin-bottom: 86px;
+  }
+
   .menu-list--header {
     grid-template-areas: "nav logo phone";
     -ms-grid-columns: 126px auto 126px;
     grid-template-columns: 126px auto 126px;
-    padding: 30px 45px 0;
+    padding: 30px 45px 66px;
   }
 
   .show-menu .menu-list--header {
@@ -4402,6 +4413,10 @@ button,
     grid-area: nav;
   }
 
+  .show-menu .menu-list__item--nav {
+    padding-top: 11px;
+  }
+
   .menu-list__item--logo {
     grid-area: logo;
   }
@@ -4416,7 +4431,7 @@ button,
   }
 
   .show-menu .menu-list__item--phone {
-    padding-top: 14px;
+    padding-top: 3px;
   }
 
   .menu-list__item--nav {
@@ -4456,6 +4471,21 @@ button,
     display: none;
   }
 
+  .show-menu .navigation__list--header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navigation__list--footer {
+    margin-top: -7px;
+  }
+
   .navigation__toggle {
     display: block;
     border: none;
@@ -4485,6 +4515,10 @@ button,
   .navigation__item--footer a {
     font-weight: 400;
     padding: 0;
+  }
+
+  .show-menu .contacts__item {
+    padding-top: 9px;
   }
 
   .contacts__item a {
@@ -4887,7 +4921,6 @@ button,
   .contact-form {
     padding-top: 195px;
     padding-bottom: 183px;
-    margin-bottom: 87px;
   }
 
   .contact-form__wrapper {
@@ -4981,18 +5014,6 @@ button,
   }
 }
 
-@media (max-width: 1199px) and (max-width: 1199px) {
-  .show-menu .navigation__list--header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 1199px) and (max-width: 767px) {
   .learning-process__item--mountain::before {
     top: auto;
@@ -5054,6 +5075,10 @@ button,
     margin-bottom: 64px;
   }
 
+  .contact-form {
+    margin-bottom: 64px;
+  }
+
   .menu-list--header {
     grid-template-areas: "nav logo" "nav phone";
     -ms-grid-columns: auto 112px;
@@ -5063,7 +5088,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    padding: 15px 15px 0;
+    padding: 15px 15px 45px;
   }
 
   .menu-list--footer {
@@ -5094,7 +5119,7 @@ button,
 
   .menu-list__item--logo-footer {
     grid-area: footer-logo;
-    margin-bottom: 17px;
+    margin-bottom: 11px;
   }
 
   .menu-list__item--logo-footer svg {
@@ -5116,6 +5141,10 @@ button,
     -ms-grid-column: 1;
   }
 
+  .navigation__list--header {
+    gap: 12px;
+  }
+
   .navigation__list--footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5123,6 +5152,17 @@ button,
     flex-direction: column;
     max-height: 80px;
     gap: 15px 81px;
+  }
+
+  .show-menu .navigation__item a {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  .contacts__item a {
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .contacts__item a {
@@ -5519,7 +5559,6 @@ button,
   .contact-form {
     padding-top: 179px;
     padding-bottom: 177px;
-    margin-bottom: 64px;
   }
 
   .contact-form form {
