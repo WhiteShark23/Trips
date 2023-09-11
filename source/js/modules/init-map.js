@@ -1,6 +1,6 @@
 const map = document.querySelector('.map');
 const iconOptions = {
-  iconUrl: '../../img/map-icon.svg',
+  iconUrl: '/img/map-icon.svg',
   iconSize: [38, 50],
 };
 const customIcon = window.L.icon(iconOptions);

@@ -19,34 +19,34 @@
   @include vp-1199 {
     display: none;
   }
+}
 
-  &--forest {
-    display: block;
-    top: -141px;
-    left: auto;
-    right: -120px;
+.upcoming-tours__img-background-forest {
+  position: absolute;
+  display: block;
+  top: -141px;
+  right: -120px;
+
+  img {
+    height: auto;
+  }
+
+  @include vp-1440 {
+    right: 0;
+  }
+
+  @include vp-1199 {
+    top: -182px;
+    right: -308px;
+  }
+
+  @include vp-767 {
+    top: 71px;
+    right: -185px;
 
     img {
-      height: auto;
-    }
-
-    @include vp-1440 {
-      right: 0;
-    }
-
-    @include vp-1199 {
-      top: -182px;
-      right: -308px;
-    }
-
-    @include vp-767 {
-      top: 71px;
-      right: -185px;
-
-      img {
-        width: 346px;
-        height: 595px;
-      }
+      width: 346px;
+      height: 595px;
     }
   }
 }

@@ -3709,32 +3709,33 @@ button,
     display: none;
   }
 }
-.upcoming-tours__img-background--forest {
+
+.upcoming-tours__img-background-forest {
+  position: absolute;
   display: block;
   top: -141px;
-  left: auto;
   right: -120px;
 }
-.upcoming-tours__img-background--forest img {
+.upcoming-tours__img-background-forest img {
   height: auto;
 }
 @media (min-width: 1440px) {
-  .upcoming-tours__img-background--forest {
+  .upcoming-tours__img-background-forest {
     right: 0;
   }
 }
 @media (max-width: 1199px) {
-  .upcoming-tours__img-background--forest {
+  .upcoming-tours__img-background-forest {
     top: -182px;
     right: -308px;
   }
 }
 @media (max-width: 767px) {
-  .upcoming-tours__img-background--forest {
+  .upcoming-tours__img-background-forest {
     top: 71px;
     right: -185px;
   }
-  .upcoming-tours__img-background--forest img {
+  .upcoming-tours__img-background-forest img {
     width: 346px;
     height: 595px;
   }
@@ -4964,36 +4965,42 @@ button,
   position: relative;
 }
 
-.advantages__img-background {
+.advantages__img-background-left {
   position: absolute;
   top: -235px;
   left: -155px;
 }
-.advantages__img-background img {
+.advantages__img-background-left img {
   height: 391px;
 }
 @media (min-width: 1440px) {
-  .advantages__img-background {
+  .advantages__img-background-left {
     left: -35px;
   }
 }
 @media (max-width: 1199px) {
-  .advantages__img-background {
+  .advantages__img-background-left {
     display: none;
   }
 }
-.advantages__img-background--right {
+
+.advantages__img-background-right {
+  position: absolute;
   top: -56px;
-  left: auto;
   right: -132px;
 }
-.advantages__img-background--right img {
+.advantages__img-background-right img {
   width: 788px;
   height: 263px;
 }
 @media (min-width: 1440px) {
-  .advantages__img-background--right {
+  .advantages__img-background-right {
     right: -112px;
+  }
+}
+@media (max-width: 1199px) {
+  .advantages__img-background-right {
+    display: none;
   }
 }
 
