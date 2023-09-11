@@ -20,6 +20,7 @@
       .show-menu & {
         background-color: $color-default-white;
         align-items: start;
+        box-shadow: 0 420px 0 rgba(0, 0, 0, 0.5);
       }
 
       .nojs & {
@@ -36,6 +37,10 @@
       grid-template-rows: 34px auto;
       align-items: start;
       padding: 15px 15px 45px;
+    }
+
+    .show-menu & {
+      box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
     }
   }
 

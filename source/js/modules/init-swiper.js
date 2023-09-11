@@ -103,12 +103,12 @@ export const initSwiperAdvantages = () => {
   mediaQuery.addEventListener('change', handleMediaChange);
 
   const swiperAdvantages = new window.Swiper('.advantages__swiper', {
+    spaceBetween: 30,
     allowTouchMove: false,
     initialSlide: 2,
     centeredSlides: true,
     loop: true,
     slidesPerView: 'auto',
-    spaceBetween: 30,
     navigation: {
       nextEl: '.advantages__btn-next',
       prevEl: '.advantages__btn-prev',
