@@ -2953,8 +2953,9 @@ button,
   color: #2d383f;
 }
 
-.title span {
+.title::after {
   position: absolute;
+  content: attr(data-title);
   bottom: 0;
   left: 0;
   font-size: 55px;
@@ -3552,7 +3553,7 @@ button,
   text-align: center;
 }
 
-.advantages__title span {
+.advantages__title::after {
   left: 50%;
   -webkit-transform: translate(-50%);
   -ms-transform: translate(-50%);
@@ -4291,7 +4292,7 @@ button,
     line-height: 25px;
   }
 
-  .title span {
+  .title::after {
     font-size: 40px;
     line-height: 40px;
   }
@@ -4959,7 +4960,7 @@ button,
     width: 156px;
   }
 
-  .title span {
+  .title::after {
     font-size: 26px;
     line-height: 26px;
     bottom: auto;
