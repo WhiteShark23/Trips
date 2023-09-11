@@ -1,5 +1,5 @@
 const nojs = document.querySelector('.nojs');
-const toggle = document.querySelector('.js-toggle');
+const btnHeaderElement = document.querySelector('.js-toggle');
 const header = document.querySelector('.header');
 
 const onToggleClick = (evt) => {
@@ -13,7 +13,7 @@ export const getMenuToggle = () => {
     nojs.classList.remove('nojs');
   }
 
-  if (toggle) {
-    toggle.addEventListener('click', onToggleClick);
+  if (btnHeaderElement) {
+    btnHeaderElement.addEventListener('click', onToggleClick);
   }
 };
