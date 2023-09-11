@@ -2144,11 +2144,19 @@ button,
     padding: 0 15px;
   }
 }
-.container--hero {
+
+.container__hero {
   position: static;
   height: 100%;
 }
-.container--gallery {
+
+@media (max-width: 767px) {
+  .container__upcoming-tours {
+    z-index: 1;
+  }
+}
+
+.container__gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2161,12 +2169,12 @@ button,
   margin-bottom: 46px;
 }
 @media (max-width: 1199px) {
-  .container--gallery {
+  .container__gallery {
     margin-bottom: 37px;
   }
 }
 @media (max-width: 767px) {
-  .container--gallery {
+  .container__gallery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2178,13 +2186,9 @@ button,
     margin-bottom: 15px;
   }
 }
-.container--form {
+
+.container__form {
   z-index: 1;
-}
-@media (max-width: 767px) {
-  .container--upcoming-tours {
-    z-index: 1;
-  }
 }
 
 .btn {
@@ -2366,16 +2370,16 @@ button,
   }
 }
 
-.contact-form {
+.page__contact-form {
   margin-bottom: 60px;
 }
 @media (max-width: 1199px) {
-  .contact-form {
+  .page__contact-form {
     margin-bottom: 86px;
   }
 }
 @media (max-width: 767px) {
-  .contact-form {
+  .page__contact-form {
     margin-bottom: 64px;
   }
 }
@@ -2439,10 +2443,10 @@ button,
             align-items: start;
     padding: 15px 15px 45px;
   }
-}
-.show-menu .menu-list--header {
-  -webkit-box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
+  .show-menu .menu-list--header {
+    -webkit-box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
+  }
 }
 .menu-list--footer {
   position: static;
@@ -5027,7 +5031,7 @@ button,
   }
 }
 
-.contact-form-text {
+.contact-form__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5042,19 +5046,19 @@ button,
   padding-right: 17px;
 }
 @media (max-width: 1199px) {
-  .contact-form-text {
+  .contact-form__text {
     padding-right: 0;
     max-width: 295px;
     gap: 18px;
   }
 }
 @media (max-width: 767px) {
-  .contact-form-text {
+  .contact-form__text {
     text-align: center;
     gap: 13px;
   }
 }
-.contact-form-text h2 {
+.contact-form__text h2 {
   margin: 0;
   padding: 0;
   font-size: 35px;
@@ -5062,18 +5066,18 @@ button,
   line-height: 35px;
 }
 @media (max-width: 1199px) {
-  .contact-form-text h2 {
+  .contact-form__text h2 {
     font-size: 25px;
     line-height: 25px;
   }
 }
 @media (max-width: 767px) {
-  .contact-form-text h2 {
+  .contact-form__text h2 {
     font-size: 22px;
     line-height: 22px;
   }
 }
-.contact-form-text p {
+.contact-form__text p {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -5081,7 +5085,7 @@ button,
   line-height: 24px;
 }
 @media (max-width: 767px) {
-  .contact-form-text p {
+  .contact-form__text p {
     font-size: 12px;
     line-height: 18px;
   }
