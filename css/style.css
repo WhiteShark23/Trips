@@ -2414,11 +2414,6 @@ button,
   padding-top: 40px;
 }
 
-.show-menu .menu-list--header {
-  -webkit-box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
-}
-
 .menu-list--footer {
   position: static;
   background-color: transparent;
@@ -4746,6 +4741,11 @@ button,
     -ms-flex-align: start;
     align-items: start;
     padding: 15px 15px 45px;
+  }
+
+  .show-menu .menu-list--header {
+    -webkit-box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 320px 0 rgba(0, 0, 0, 0.5);
   }
 
   .menu-list--footer {
