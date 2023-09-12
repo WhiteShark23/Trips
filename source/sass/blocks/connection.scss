@@ -141,6 +141,7 @@
     @include vp-767 {
       line-height: 20px;
       max-width: 160px;
+      color: $color-elephant;
     }
 
     @include hover-focus {
