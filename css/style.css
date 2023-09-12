@@ -2265,28 +2265,6 @@ button,
   padding: 0;
 }
 
-.container__hero {
-  position: static;
-  height: 100%;
-}
-
-.container__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
-  margin-bottom: 46px;
-}
-
-.container__form {
-  z-index: 1;
-}
-
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2616,6 +2594,11 @@ button,
 
 .hero {
   background-color: #0266c1;
+}
+
+.hero__container {
+  position: static;
+  height: 100%;
 }
 
 .hero__slide-wrapper {
@@ -3616,6 +3599,19 @@ button,
   line-height: 22px;
 }
 
+.gallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  margin-bottom: 46px;
+}
+
 .gallery__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3675,6 +3671,10 @@ button,
   padding-top: 312px;
   padding-bottom: 307px;
   background-color: #0266c1;
+}
+
+.contact-form__container {
+  z-index: 1;
 }
 
 .contact-form__wrapper {
@@ -3951,10 +3951,6 @@ button,
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
-  }
-
-  .container__gallery {
-    margin-bottom: 37px;
   }
 
   .btn--form {
@@ -4558,6 +4554,10 @@ button,
     line-height: 18px;
   }
 
+  .gallery__container {
+    margin-bottom: 37px;
+  }
+
   .gallery__text p {
     font-size: 14px;
     line-height: 22px;
@@ -4681,22 +4681,6 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
-  }
-
-  .container__upcoming-tours {
-    z-index: 1;
-  }
-
-  .container__gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 15px;
   }
 
   .btn--form {
@@ -4917,6 +4901,10 @@ button,
 
   .video {
     display: none;
+  }
+
+  .upcoming-tours__container {
+    z-index: 1;
   }
 
   .upcoming-tours__img-background-forest {
@@ -5202,6 +5190,18 @@ button,
     line-height: 14px;
   }
 
+  .gallery__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
   .gallery__text p {
     font-size: 12px;
     line-height: 18px;
@@ -5306,7 +5306,6 @@ button,
   .connection__item a {
     line-height: 20px;
     max-width: 160px;
-    color: #2d383f;
   }
 
   .map {
