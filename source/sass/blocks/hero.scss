@@ -2,6 +2,11 @@
   background-color: $color-navy-blue;
 }
 
+.hero__container {
+  position: static;
+  height: 100%;
+}
+
 .hero__slide-wrapper {
   height: auto;
 }

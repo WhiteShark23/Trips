@@ -3,6 +3,12 @@
   position: relative;
 }
 
+.upcoming-tours__container {
+  @include vp-767 {
+    z-index: 1;
+  }
+}
+
 .upcoming-tours__img-background {
   position: absolute;
   top: 379px;

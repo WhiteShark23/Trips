@@ -13,36 +13,3 @@
     padding: 0 15px;
   }
 }
-
-.container__hero {
-  position: static;
-  height: 100%;
-}
-
-.container__upcoming-tours {
-  @include vp-767 {
-    z-index: 1;
-  }
-}
-
-.container__gallery {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  margin-bottom: 46px;
-
-  @include vp-1199 {
-    margin-bottom: 37px;
-  }
-
-  @include vp-767 {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-.container__form {
-  z-index: 1;
-}
