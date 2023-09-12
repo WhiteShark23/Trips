@@ -5306,6 +5306,7 @@ button,
   .connection__item a {
     line-height: 20px;
     max-width: 160px;
+    color: #2d383f;
   }
 
   .map {
