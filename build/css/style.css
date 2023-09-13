@@ -3094,6 +3094,7 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 40px;
 }
 @media (max-width: 1199px) {
   .hero__list {
@@ -3101,6 +3102,7 @@ button,
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin: 0;
   }
 }
 .hero__list h2 {
