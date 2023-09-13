@@ -3973,7 +3973,7 @@ button,
   }
 
   .page__hero {
-    margin-bottom: 89px;
+    margin-bottom: 88px;
   }
 
   .page__upcoming-tours {
@@ -4207,7 +4207,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 50px;
+    gap: 51px;
     padding: 174px 0 72px;
   }
 
@@ -4239,7 +4239,12 @@ button,
   }
 
   .hero__list a {
-    width: 206px;
+    width: 100%;
+  }
+
+  .hero__item--link {
+    width: 100%;
+    padding: 0 236px;
   }
 
   .hero__btn-list {
@@ -4890,12 +4895,10 @@ button,
   }
 
   .hero__list a {
-    width: 100%;
     padding: 17px;
   }
 
   .hero__item--link {
-    width: 100%;
     padding: 0 55px;
   }
 
