@@ -4376,12 +4376,16 @@ button,
       -ms-flex-pack: end;
           justify-content: end;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .about-up__wrapper {
-    padding-top: 375px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+}
+@media (max-width: 767px) {
+  .about-up__wrapper {
+    padding-top: 375px;
   }
 }
 
@@ -4430,6 +4434,12 @@ button,
 @media (max-width: 1199px) {
   .about-up__info {
     width: 324px;
+    margin-left: 354px;
+  }
+}
+@media (max-width: 767px) {
+  .about-up__info {
+    margin-left: 0;
   }
 }
 
@@ -4530,7 +4540,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__swiper-wrapper {
-    padding-left: calc(100% - 723px);
+    padding-left: 45px;
     margin-bottom: 88px;
   }
 }
