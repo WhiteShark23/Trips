@@ -4945,12 +4945,15 @@ button,
   }
 }
 
+.gallery-card {
+  height: auto;
+}
 .gallery-card--wide {
   width: 275px;
 }
 @media (max-width: 767px) {
   .gallery-card--wide {
-    width: 159px;
+    width: 160px;
   }
 }
 .gallery-card--mountain {
@@ -4984,6 +4987,13 @@ button,
   .gallery-card--net {
     width: 172px;
   }
+}
+
+.gallery-card__img {
+  height: 100%;
+}
+.gallery-card__img img {
+  height: 100%;
 }
 
 .contact-form {

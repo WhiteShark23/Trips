@@ -1,9 +1,11 @@
 .gallery-card {
+    height: auto;
+
   &--wide {
     width: 275px;
 
     @include vp-767 {
-      width: 159px;
+      width: 160px;
     }
   }
 
@@ -32,5 +34,13 @@
     @include vp-767 {
       width: 172px;
     }
+  }
+}
+
+.gallery-card__img {
+  height: 100%;
+
+  img {
+    height: 100%;
   }
 }
