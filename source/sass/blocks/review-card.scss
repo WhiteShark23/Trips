@@ -8,12 +8,6 @@
   padding-right: 40px;
   height: auto;
 
-  p {
-    a {
-      color: $color-torch-red;
-    }
-  }
-
   @include vp-1199 {
     grid-template-columns: 186px 1fr;
     width: 560px;

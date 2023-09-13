@@ -85,7 +85,14 @@ export const initSwiperReviews = () => {
         allowTouchMove: false,
         slidesPerView: 'auto',
         spaceBetween: 30,
-      }},
+      },
+      1200: {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        spaceBetween: 30,
+      },
+    },
     navigation: {
       nextEl: '.reviews__btn-next',
       prevEl: '.reviews__btn-prev',
@@ -128,6 +135,12 @@ export const initSwiperGallery = () => {
       prevEl: '.gallery__btn-prev',
     },
     breakpoints: {
+      320: {
+        allowTouchMove: true,
+      },
+      768: {
+        allowTouchMove: false,
+      },
       1200: {
         initialSlide: 2,
         centeredSlides: true,

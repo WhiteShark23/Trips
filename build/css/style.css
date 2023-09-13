@@ -4601,11 +4601,11 @@ button,
 .reviews__swiper-wrapper {
   margin-top: 27px;
   margin-bottom: 137px;
-  padding-left: calc(100% - 1320px);
+  margin-left: -205px;
 }
 @media (max-width: 1199px) {
   .reviews__swiper-wrapper {
-    padding-left: 45px;
+    margin-left: 0;
     margin-bottom: 88px;
   }
 }
@@ -4613,6 +4613,7 @@ button,
   .reviews__swiper-wrapper {
     padding: 0;
     margin-top: 30px;
+    margin-left: 0;
     margin-bottom: 67px;
   }
 }
@@ -4629,9 +4630,6 @@ button,
   padding: 20px;
   padding-right: 40px;
   height: auto;
-}
-.review-card p a {
-  color: #ff1553;
 }
 @media (max-width: 1199px) {
   .review-card {
