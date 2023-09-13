@@ -3642,6 +3642,10 @@ button,
   margin-bottom: 6px;
 }
 
+.gallery-card {
+  height: auto;
+}
+
 .gallery-card--wide {
   width: 275px;
 }
@@ -3664,6 +3668,14 @@ button,
   flex-direction: column;
   gap: 5px;
   width: 298px;
+}
+
+.gallery-card__img {
+  height: 100%;
+}
+
+.gallery-card__img img {
+  height: 100%;
 }
 
 .contact-form {
@@ -5223,7 +5235,7 @@ button,
   }
 
   .gallery-card--wide {
-    width: 159px;
+    width: 160px;
   }
 
   .gallery-card--mountain {
