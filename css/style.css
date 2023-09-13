@@ -3867,9 +3867,9 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
   gap: 8px;
 }
 
@@ -3879,6 +3879,7 @@ button,
   -ms-grid-column: 1;
   grid-area: icon;
   margin-right: 21px;
+  margin-top: 12px;
 }
 
 .connection__item h3 {
@@ -3891,17 +3892,37 @@ button,
   line-height: 18px;
 }
 
-.connection__item a {
+.connection__contact {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   grid-area: link;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.connection__contact-item a {
   font-size: 16px;
   line-height: 24px;
   color: #2d383f;
 }
 
-.connection__item a:focus:not(:disabled) {
+.connection__contact-item a:focus:not(:disabled) {
   color: #1c3374;
+}
+
+.connection__contact-item span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d383f;
 }
 
 .map {
@@ -4004,7 +4025,7 @@ button,
   }
 
   .page__education {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
   }
 
   .page__about-up {
@@ -4050,7 +4071,7 @@ button,
   .menu-list--footer {
     -ms-grid-columns: 144px auto;
     grid-template-columns: 144px auto;
-    margin-bottom: 31px;
+    margin-bottom: 17px;
   }
 
   .menu-list__item--nav {
@@ -4737,6 +4758,7 @@ button,
     width: 24px;
     height: 24px;
     margin-right: 4px;
+    margin-top: 0;
   }
 
   .connection__item h3 {
@@ -4744,7 +4766,12 @@ button,
     line-height: 16px;
   }
 
-  .connection__item a {
+  .connection__contact-item a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .connection__contact-item span {
     font-size: 14px;
     line-height: 22px;
   }
@@ -4789,7 +4816,7 @@ button,
   }
 
   .page__about-up {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .page__title--education {
@@ -4824,6 +4851,7 @@ button,
   .menu-list--footer {
     grid-template-areas: "footer-logo" "footer-menu";
     padding-left: 4px;
+    margin-bottom: 29px;
   }
 
   .show-menu .menu-list__item--nav {
@@ -5371,7 +5399,7 @@ button,
   }
 
   .connection__wrapper {
-    gap: 30px;
+    gap: 22px;
   }
 
   .connection__info {
@@ -5389,7 +5417,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 32px;
+    gap: 28px;
   }
 
   .connection__item svg {
@@ -5402,9 +5430,17 @@ button,
     line-height: 14px;
   }
 
-  .connection__item a {
+  .connection__contact {
+    max-width: 160px;
+  }
+
+  .connection__contact-item a {
     line-height: 20px;
     max-width: 160px;
+  }
+
+  .connection__contact-item span {
+    line-height: 20px;
   }
 
   .map {
@@ -5608,11 +5644,11 @@ button,
     color: transparent;
   }
 
-  .connection__item a:hover:not(:disabled) {
+  .connection__contact-item a:hover:not(:disabled) {
     color: #1c3374;
   }
 
-  .connection__item a:active:not(:disabled) {
+  .connection__contact-item a:active:not(:disabled) {
     color: #0266c1;
   }
 }
