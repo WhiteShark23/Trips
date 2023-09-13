@@ -3740,28 +3740,6 @@ button,
       -ms-flex-align: center;
           align-items: center;
 }
-.tour-card__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 6px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 12px;
-  background-color: #0266c1;
-  color: #ffffff;
-  width: 108px;
-  padding: 9px 25px 8px 24px;
-}
-@media (max-width: 1199px) {
-  .tour-card__item a {
-    width: auto;
-    padding: 9px 23px 8px 15px;
-  }
-}
 .tour-card__item span {
   font-size: 12px;
   font-weight: 500;
@@ -3811,6 +3789,31 @@ button,
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
+  }
+}
+
+.tour-card__local {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0266c1;
+  color: #ffffff;
+  width: 108px;
+  padding: 9px 25px 8px 24px;
+}
+.tour-card__local span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+@media (max-width: 1199px) {
+  .tour-card__local {
+    width: auto;
+    padding: 9px 23px 8px 15px;
   }
 }
 
