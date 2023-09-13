@@ -5022,14 +5022,14 @@ button,
     padding-top: 195px;
     padding-bottom: 183px;
   }
+  .contact-form form {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .contact-form {
     padding-top: 179px;
     padding-bottom: 177px;
-  }
-  .contact-form form {
-    width: 100%;
   }
 }
 
@@ -5131,15 +5131,20 @@ button,
 }
 @media (max-width: 1199px) {
   .contact-form__input-wrapper {
-    -ms-grid-columns: 266px;
-    grid-template-columns: 266px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 6px;
+    width: 39.1891891892%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media (max-width: 767px) {
   .contact-form__input-wrapper {
+    width: 100%;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin: 0;
   }
 }
 
