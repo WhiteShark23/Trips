@@ -3025,23 +3025,6 @@ button,
   align-items: center;
 }
 
-.tour-card__item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 6px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 12px;
-  background-color: #0266c1;
-  color: #ffffff;
-  width: 108px;
-  padding: 9px 25px 8px 24px;
-}
-
 .tour-card__item span {
   font-size: 12px;
   font-weight: 500;
@@ -3055,6 +3038,26 @@ button,
 
 .tour-card__item--moon span {
   margin-left: 12.8px;
+}
+
+.tour-card__local {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0266c1;
+  color: #ffffff;
+  width: 108px;
+  padding: 9px 25px 8px 24px;
+}
+
+.tour-card__local span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
 }
 
 .tour-card__info {
@@ -4384,13 +4387,13 @@ button,
     gap: 14px;
   }
 
-  .tour-card__item a {
-    width: auto;
-    padding: 9px 23px 8px 15px;
-  }
-
   .tour-card__item--sun span {
     margin-left: 8.78px;
+  }
+
+  .tour-card__local {
+    width: auto;
+    padding: 9px 23px 8px 15px;
   }
 
   .instructor-card {
