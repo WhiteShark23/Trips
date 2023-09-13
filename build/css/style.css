@@ -2145,52 +2145,6 @@ button,
   }
 }
 
-.container__hero {
-  position: static;
-  height: 100%;
-}
-
-@media (max-width: 767px) {
-  .container__upcoming-tours {
-    z-index: 1;
-  }
-}
-
-.container__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  margin-bottom: 46px;
-}
-@media (max-width: 1199px) {
-  .container__gallery {
-    margin-bottom: 37px;
-  }
-}
-@media (max-width: 767px) {
-  .container__gallery {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-.container__form {
-  z-index: 1;
-}
-
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3021,6 +2975,11 @@ button,
   background-color: #0266c1;
 }
 
+.hero__container {
+  position: static;
+  height: 100%;
+}
+
 .hero__slide-wrapper {
   height: auto;
 }
@@ -3421,6 +3380,12 @@ button,
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .upcoming-tours__container {
+    z-index: 1;
+  }
+}
+
 .upcoming-tours__img-background {
   position: absolute;
   top: 379px;
@@ -3652,7 +3617,7 @@ button,
 }
 @media (max-width: 767px) {
   .tour-card {
-    padding-top: 197px;
+    padding-top: 67.9310344828%;
   }
 }
 .tour-card h3 {
@@ -4880,6 +4845,37 @@ button,
   }
 }
 
+.gallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 46px;
+}
+@media (max-width: 1199px) {
+  .gallery__container {
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .gallery__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 .gallery__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5005,6 +5001,10 @@ button,
   .contact-form form {
     width: 100%;
   }
+}
+
+.contact-form__container {
+  z-index: 1;
 }
 
 .contact-form__wrapper {

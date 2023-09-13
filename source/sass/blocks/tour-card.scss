@@ -6,7 +6,7 @@
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
 
   @include vp-767 {
-    padding-top: 197px;
+    padding-top: calc(100% * 197 / 290);
   }
 
   h3 {
