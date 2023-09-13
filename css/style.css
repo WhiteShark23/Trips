@@ -4293,6 +4293,10 @@ button,
     line-height: 40px;
   }
 
+  .tour-card {
+    padding-top: 30.9309309309%;
+  }
+
   .tour-card h3 {
     padding-right: 50px;
   }
