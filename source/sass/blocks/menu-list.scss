@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 205px auto 142px;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   padding-top: 40px;
 
   &--header {
@@ -165,7 +165,7 @@
 
     @include vp-767 {
       grid-area: footer-logo;
-      margin-bottom: 17px;
+      margin-bottom: 10px;
 
       svg {
         width: 114px;

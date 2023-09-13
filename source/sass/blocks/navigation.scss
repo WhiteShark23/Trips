@@ -18,8 +18,11 @@
   max-width: 600px;
 
   &--header {
+    padding-top: 20px;
+
     @include vp-1199 {
       display: none;
+      padding: 0;
 
       .show-menu & {
         display: flex;
@@ -46,16 +49,17 @@
   }
 
   &--footer {
-    flex-wrap: wrap;
+    padding-top: 23px;
 
     @include vp-1199 {
-      margin-top: -7px;
+      padding-top: 10px;
     }
 
     @include vp-767 {
       flex-direction: column;
       max-height: 80px;
       gap: 15px 81px;
+      padding: 0;
     }
   }
 }
@@ -69,6 +73,11 @@
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    padding-top: 12px;
+
+    .show-menu & {
+      padding: 0;
+    }
 
     svg {
       .nojs & {
@@ -87,6 +96,10 @@
         }
       }
     }
+  }
+
+  @include vp-767 {
+    padding: 0;
   }
 }
 

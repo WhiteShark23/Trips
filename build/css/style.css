@@ -2357,9 +2357,9 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   padding-top: 40px;
 }
 @media (max-width: 1199px) {
@@ -2541,7 +2541,7 @@ button,
 @media (max-width: 767px) {
   .menu-list__item--logo-footer {
     grid-area: footer-logo;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
   }
   .menu-list__item--logo-footer svg {
     width: 114px;
@@ -2610,9 +2610,13 @@ button,
   gap: 20px;
   max-width: 600px;
 }
+.navigation__list--header {
+  padding-top: 20px;
+}
 @media (max-width: 1199px) {
   .navigation__list--header {
     display: none;
+    padding: 0;
   }
   .show-menu .navigation__list--header {
     display: -webkit-box;
@@ -2644,12 +2648,11 @@ button,
   }
 }
 .navigation__list--footer {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding-top: 23px;
 }
 @media (max-width: 1199px) {
   .navigation__list--footer {
-    margin-top: -7px;
+    padding-top: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -2660,6 +2663,7 @@ button,
             flex-direction: column;
     max-height: 80px;
     gap: 15px 81px;
+    padding: 0;
   }
 }
 
@@ -2673,6 +2677,10 @@ button,
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    padding-top: 12px;
+  }
+  .show-menu .navigation__toggle {
+    padding: 0;
   }
   .nojs .navigation__toggle svg {
     display: none;
@@ -2685,6 +2693,11 @@ button,
   }
   .show-menu .navigation__toggle svg:last-child {
     display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navigation__toggle {
+    padding: 0;
   }
 }
 
@@ -2762,6 +2775,28 @@ button,
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+@media (max-width: 1199px) {
+  .contacts {
+    padding-top: 12px;
+  }
+  .show-menu .contacts {
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: 2px;
+  }
 }
 
 @media (max-width: 1199px) {
