@@ -69,7 +69,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 25px auto;
-  align-items: center;
+  align-items: end;
   gap: 15px;
   padding-bottom: 41px;
 
@@ -87,6 +87,10 @@
       bottom: 8px;
       left: 4px;
     }
+  }
+
+  svg {
+    margin-bottom: 12px;
   }
 
   p {
@@ -147,7 +151,12 @@
     @include vp-1199 {
       padding: 0;
       grid-area: pine;
+      align-items: start;
       padding-top: 27px;
+
+      svg {
+        margin-top: 9px;
+      }
 
       &::before {
         bottom: auto;
@@ -167,7 +176,12 @@
     @include vp-1199 {
       padding: 0;
       grid-area: mountain;
+      align-items: start;
       padding-top: 27px;
+
+      svg {
+        margin-top: 9px;
+      }
 
       &::before {
         bottom: auto;
@@ -201,10 +215,13 @@
     padding-left: 38px;
     grid-template-columns: 19px auto;
     gap: 12px;
+    align-items: end;
 
     svg {
       width: 19px;
       height: auto;
+      margin-top: 0;
+      margin-bottom: 12px;
     }
 
     &::after {

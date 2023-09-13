@@ -4217,9 +4217,9 @@ button,
   display: grid;
   -ms-grid-columns: 25px auto;
   grid-template-columns: 25px auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   gap: 15px;
   padding-bottom: 41px;
 }
@@ -4238,6 +4238,9 @@ button,
     bottom: 8px;
     left: 4px;
   }
+}
+.learning-process__item svg {
+  margin-bottom: 12px;
 }
 .learning-process__item p {
   margin: 0;
@@ -4294,7 +4297,13 @@ button,
   .learning-process__item--pine {
     padding: 0;
     grid-area: pine;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding-top: 27px;
+  }
+  .learning-process__item--pine svg {
+    margin-top: 9px;
   }
   .learning-process__item--pine::before {
     bottom: auto;
@@ -4311,7 +4320,13 @@ button,
   .learning-process__item--mountain {
     padding: 0;
     grid-area: mountain;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding-top: 27px;
+  }
+  .learning-process__item--mountain svg {
+    margin-top: 9px;
   }
   .learning-process__item--mountain::before {
     bottom: auto;
@@ -4366,10 +4381,15 @@ button,
     -ms-grid-columns: 19px auto;
     grid-template-columns: 19px auto;
     gap: 12px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
   .learning-process__item svg {
     width: 19px;
     height: auto;
+    margin-top: 0;
+    margin-bottom: 12px;
   }
   .learning-process__item::after {
     position: absolute;
