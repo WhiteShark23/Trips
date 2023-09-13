@@ -5458,12 +5458,12 @@ button,
 @media (max-width: 1199px) {
   .map {
     margin: 0;
-    height: 340px;
+    padding-top: 50.1474926254%;
   }
 }
 @media (max-width: 767px) {
   .map {
-    height: 320px;
+    padding-top: 110.3448275862%;
   }
 }
 
@@ -5471,6 +5471,9 @@ button,
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+}
+.map__background img {
   width: 100%;
 }
 

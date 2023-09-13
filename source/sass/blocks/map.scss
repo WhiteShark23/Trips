@@ -5,11 +5,11 @@
 
   @include vp-1199 {
     margin: 0;
-    height: 340px;
+    padding-top: calc(100% * 340 / 678);
   }
 
   @include vp-767 {
-    height: 320px;
+    padding-top: calc(100% * 320 / 290);
   }
 }
 
@@ -18,4 +18,8 @@
   top: 0;
   left: 0;
   width: 100%;
+
+  img {
+    width: 100%;
+  }
 }
