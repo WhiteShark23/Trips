@@ -2250,7 +2250,7 @@ button,
 }
 @media (max-width: 1199px) {
   .page__hero {
-    margin-bottom: 89px;
+    margin-bottom: 88px;
   }
 }
 @media (max-width: 767px) {
@@ -3012,7 +3012,7 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 50px;
+    gap: 51px;
     padding: 174px 0 72px;
   }
   .hero__slide--kamchatka {
@@ -3127,12 +3127,11 @@ button,
 }
 @media (max-width: 1199px) {
   .hero__list a {
-    width: 206px;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
   .hero__list a {
-    width: 100%;
     padding: 17px;
   }
 }
@@ -3156,9 +3155,14 @@ button,
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__item--link {
     width: 100%;
+    padding: 0 236px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__item--link {
     padding: 0 55px;
   }
 }
