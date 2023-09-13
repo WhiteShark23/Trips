@@ -79,6 +79,7 @@ export const initSwiperReviews = () => {
       320: {
         allowTouchMove: true,
         spaceBetween: 30,
+        slidesPerView: 1,
       },
       768: {
         allowTouchMove: false,
