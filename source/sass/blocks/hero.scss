@@ -148,6 +148,12 @@
 }
 
 .hero__item {
+  &--link {
+    a {
+      user-select: none;
+    }
+  }
+
   @include vp-1199 {
     &--link {
       width: 100%;
