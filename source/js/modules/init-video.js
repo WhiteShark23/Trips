@@ -40,8 +40,16 @@ const initVideo = (containerElement) => {
   } else {
     loadScript('https://www.youtube.com/player_api', initPlayer, () => (scriptLoaded = true));
   }
+
+  return {
+    pause() {
+      if (youtubePlayer) {
+        youtubePlayer.pauseVideo();
+      }
+    },
+  };
 };
 
 export const initVideos = () => {
-  document.querySelectorAll('[data-video]').forEach(initVideo);
+  return Array.from(document.querySelectorAll('[data-video]')).map(initVideo);
 };

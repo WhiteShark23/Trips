@@ -1,5 +1,16 @@
+import {initVideos} from './init-video';
+
 export const initSwiperIntro = () => {
-  const swiperIntro = new window.Swiper('.hero__swiper', {
+  const slider = document.querySelector('.hero__swiper');
+  if (!slider) {
+    return null;
+  }
+
+  const [youtubePlayer] = initVideos();
+  const audioPlayer = slider.querySelector('.hero__audio');
+  const audioPlayTemplate = audioPlayer ? audioPlayer.innerHTML : '';
+
+  const swiperIntro = new window.Swiper(slider, {
     loop: true,
     speed: 300,
     pagination: {
@@ -14,13 +25,24 @@ export const initSwiperIntro = () => {
         allowTouchMove: false,
       },
     },
+    on: {
+      slideChange(currentSlider) {
+        youtubePlayer.pause();
+
+        const activeSlide = currentSlider.slides[currentSlider.activeIndex];
+        if (audioPlayTemplate && !activeSlide.querySelector('.hero__audio')) {
+          audioPlayer.innerHTML = '';
+          audioPlayer.innerHTML = audioPlayTemplate;
+        }
+      },
+    },
   });
 
   return swiperIntro;
 };
 
 export const initSwiperUpcomingTours = () => {
-  const swiperIntro = new window.Swiper('.upcoming-tours__swiper', {
+  const swiperUpcomingTours = new window.Swiper('.upcoming-tours__swiper', {
     breakpoints: {
       320: {
         allowTouchMove: true,
@@ -43,7 +65,7 @@ export const initSwiperUpcomingTours = () => {
     },
   });
 
-  return swiperIntro;
+  return swiperUpcomingTours;
 };
 
 export const initSwiperEducation = () => {
