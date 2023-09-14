@@ -4,8 +4,10 @@ import {getMenuToggle} from './modules/menu-toggle';
 import {initSwiperIntro, initSwiperUpcomingTours, initSwiperEducation, initSwiperReviews, initSwiperAdvantages, initSwiperGallery} from './modules/init-swiper';
 import {initVideos} from './modules/init-video';
 import {initMap} from './modules/init-map';
+import {getScroll} from './modules/init-scroll';
 // ---------------------------------
 window.addEventListener('DOMContentLoaded', () => {
+  getScroll();
   initSwiperIntro();
   getMenuToggle();
   // Utils

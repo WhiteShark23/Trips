@@ -2130,14 +2130,9 @@ button,
 .container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1290px;
   margin: 0 auto;
-  padding: 0;
-}
-@media (max-width: 1199px) {
-  .container {
-    padding: 0 45px;
-  }
+  padding: 0 45px;
 }
 @media (max-width: 767px) {
   .container {
@@ -2344,6 +2339,11 @@ button,
       -ms-flex-align: start;
           align-items: start;
   padding-top: 40px;
+}
+@media (min-width: 1440px) {
+  .menu-list {
+    padding: 40px 45px 0;
+  }
 }
 @media (max-width: 1199px) {
   .menu-list--header {
@@ -4469,7 +4469,7 @@ button,
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -120px;
+  left: -75px;
 }
 @media (max-width: 1199px) {
   .about-up__img {
