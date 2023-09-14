@@ -1,11 +1,13 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {getMenuToggle} from './modules/menu-toggle';
+import {getMenuToggle, сloseMenu} from './modules/menu-toggle';
 import {initSwiperIntro, initSwiperUpcomingTours, initSwiperEducation, initSwiperReviews, initSwiperAdvantages, initSwiperGallery} from './modules/init-swiper';
 import {initMap} from './modules/init-map';
 import {getScroll} from './modules/init-scroll';
+
 // ---------------------------------
 window.addEventListener('DOMContentLoaded', () => {
+  сloseMenu();
   getScroll();
   initSwiperIntro();
   getMenuToggle();
