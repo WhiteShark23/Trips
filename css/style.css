@@ -5422,6 +5422,11 @@ button,
     gap: 28px;
   }
 
+  .connection__item {
+    -ms-grid-columns: 26px 1fr;
+    grid-template-columns: 26px 1fr;
+  }
+
   .connection__item svg {
     width: 22px;
     height: 22px;
