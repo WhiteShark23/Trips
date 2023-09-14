@@ -2178,6 +2178,10 @@ input:matches([type=email],
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 button,
@@ -2187,6 +2191,10 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .wrapper {
@@ -2270,6 +2278,10 @@ button,
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 14px 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #ffffff;
   background-color: transparent;
   border: none;
@@ -2687,6 +2699,13 @@ button,
   background-color: #ffffff;
   color: #1c3374;
   border-color: #1c3374;
+}
+
+.hero__item--link a {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .hero__info {
