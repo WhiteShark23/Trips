@@ -5438,6 +5438,12 @@ button,
             align-items: start;
   }
 }
+@media (max-width: 767px) {
+  .connection__item {
+    -ms-grid-columns: 26px 1fr;
+    grid-template-columns: 26px 1fr;
+  }
+}
 .connection__item svg {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;

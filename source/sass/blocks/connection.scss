@@ -93,6 +93,10 @@
     align-items: start;
   }
 
+  @include vp-767 {
+    grid-template-columns: 26px 1fr;
+  }
+
   svg {
     grid-area: icon;
     margin-right: 21px;
