@@ -10,10 +10,7 @@
   justify-content: space-between;
   align-items: start;
   padding-top: 40px;
-
-  @include vp-1440 {
-    padding: 40px 45px 0;
-  }
+  padding: 40px 45px 0;
 
   &--header {
     @include vp-1199 {
