@@ -59,6 +59,10 @@
   position: relative;
   transition-property: transform;
 }
+.swiper-slide.swiper-slide-visible {
+  opacity: 1;
+  visibility: visible;
+}
 .swiper-slide-invisible-blank {
   visibility: hidden;
 }

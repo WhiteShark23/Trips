@@ -398,6 +398,11 @@ template {
   transition-property: transform, -webkit-transform;
 }
 
+.swiper-slide.swiper-slide-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .swiper-slide-invisible-blank {
   visibility: hidden;
 }
@@ -1961,8 +1966,10 @@ body {
   height: 100%;
   background-color: #ffffff;
 }
-body.is-active {
-  overflow-y: hidden;
+@media (max-width: 1199px) {
+  body.is-active {
+    overflow-y: hidden;
+  }
 }
 
 a {
@@ -2852,10 +2859,12 @@ button,
     color: #0266c1;
   }
 }
-.show-menu .contacts__item a {
-  color: #2d383f;
-}
 @media (max-width: 1199px) {
+  .show-menu .contacts__item a {
+    color: #2d383f;
+  }
+}
+@media (max-width: 1199px) and (max-width: 1199px) {
   .nojs .contacts__item a {
     color: #2d383f;
   }
@@ -3017,6 +3026,8 @@ button,
 }
 
 .hero__slide-wrapper {
+  opacity: 0;
+  visibility: hidden;
   height: auto;
 }
 
@@ -3262,6 +3273,7 @@ button,
 }
 
 .hero__block-right {
+  position: relative;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3297,6 +3309,21 @@ button,
   }
 }
 
+.hero__audio,
+.hero__video,
+.hero__photographs {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .hero__audio,
+.hero__video,
+.hero__photographs {
+    position: static;
+  }
+}
+
 .hero__pagination {
   position: static;
   display: -webkit-box;
@@ -3310,6 +3337,7 @@ button,
           align-items: center;
   min-height: 46px;
   gap: 15px;
+  margin-top: auto;
 }
 @media (max-width: 1199px) {
   .hero__pagination {

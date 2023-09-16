@@ -34,7 +34,9 @@ body {
   background-color: $color-default-white;
 
   &.is-active {
-    overflow-y: hidden;
+    @include vp-1199 {
+      overflow-y: hidden;
+    }
   }
 }
 

@@ -11,6 +11,7 @@ export const initSwiperIntro = () => {
   const audioPlayTemplate = audioPlayer ? audioPlayer.innerHTML : '';
 
   const swiperIntro = new window.Swiper(slider, {
+    watchSlidesProgress: true,
     loop: true,
     speed: 300,
     pagination: {
@@ -129,7 +130,7 @@ export const initSwiperAdvantages = () => {
     return event.matches ? swiperAdvantages : swiperAdvantages.destroy();
   };
 
-  const mediaQuery = window.matchMedia('(min-width: 1199px)');
+  const mediaQuery = window.matchMedia('(min-width: 1200px)');
   mediaQuery.addEventListener('change', handleMediaChange);
 
   const swiperAdvantages = new window.Swiper('.advantages__swiper', {

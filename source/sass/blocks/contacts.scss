@@ -71,12 +71,16 @@
     }
 
     .show-menu & {
-      color: $color-elephant;
+      @include vp-1199 {
+        color: $color-elephant;
+      }
     }
 
     @include vp-1199 {
       .nojs & {
-        color: $color-elephant;
+        @include vp-1199 {
+          color: $color-elephant;
+        }
       }
     }
   }
