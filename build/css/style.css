@@ -1961,6 +1961,9 @@ body {
   height: 100%;
   background-color: #ffffff;
 }
+body.is-active {
+  overflow-y: hidden;
+}
 
 a {
   color: #2d383f;

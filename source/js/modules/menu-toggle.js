@@ -1,5 +1,6 @@
 const nojs = document.querySelector('.nojs');
 const btnHeaderElement = document.querySelector('.js-toggle');
+const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const linkHeaderElements = header.querySelectorAll('.navigation__item');
 
@@ -7,10 +8,12 @@ const onToggleClick = (evt) => {
   evt.preventDefault();
 
   header.classList.toggle('show-menu');
+  body.classList.toggle('is-active');
 };
 
-const onCloseMenu = () => {
+const onCloseMenuClick = () => {
   header.classList.remove('show-menu');
+  body.classList.remove('is-active');
 };
 
 export const getMenuToggle = () => {
@@ -25,6 +28,6 @@ export const getMenuToggle = () => {
 
 export const сloseMenu = () => {
   for (let i = 0; i < linkHeaderElements.length; i++) {
-    linkHeaderElements[i].addEventListener('click', onCloseMenu);
+    linkHeaderElements[i].addEventListener('click', onCloseMenuClick);
   }
 };
