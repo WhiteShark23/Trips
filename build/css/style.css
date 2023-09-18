@@ -2698,7 +2698,7 @@ button,
 }
 @media (max-width: 767px) {
   .navigation__toggle {
-    padding: 0;
+    margin: 0;
   }
 }
 
@@ -3344,7 +3344,7 @@ button,
   .hero__audio,
 .hero__video,
 .hero__photographs {
-    position: static;
+    position: relative;
   }
 }
 
