@@ -2479,6 +2479,10 @@ button,
   border-color: #ffffff;
 }
 
+.show-menu .navigation__item a:focus:not(:disabled) {
+  opacity: 0.3;
+}
+
 .navigation__item--footer {
   line-height: 14px;
 }
@@ -4613,7 +4617,7 @@ button,
   }
 
   .reviews__swiper-wrapper {
-    margin-left: 0;
+    margin-left: calc(-50% - 368px);
     margin-bottom: 88px;
   }
 
@@ -5518,6 +5522,14 @@ button,
 
   .navigation__item a:active:not(:disabled) {
     border-color: transparent;
+  }
+
+  .show-menu .navigation__item a:hover:not(:disabled) {
+    opacity: 0.3;
+  }
+
+  .show-menu .navigation__item a:active:not(:disabled) {
+    opacity: 0.5;
   }
 
   .navigation__item--footer a:hover:not(:disabled) {
