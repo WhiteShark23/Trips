@@ -4679,7 +4679,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__swiper-wrapper {
-    margin-left: calc(-50% - 368px);
+    margin-left: calc(50% - 339px);
     margin-bottom: 88px;
   }
 }
