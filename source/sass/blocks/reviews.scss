@@ -29,8 +29,12 @@
   margin-bottom: 137px;
   margin-left: -205px;
 
+  @include vp-1289 {
+    margin-left: calc(440px - 50%);
+  }
+
   @include vp-1199 {
-    margin-left: calc(50% - 339px);
+    margin-left: calc(325px - 50%);
     margin-bottom: 88px;
   }
 
