@@ -4359,7 +4359,7 @@ button,
   .hero__audio,
   .hero__video,
   .hero__photographs {
-    position: static;
+    position: relative;
   }
 
   .hero__pagination {
@@ -4967,7 +4967,7 @@ button,
   }
 
   .navigation__toggle {
-    padding: 0;
+    margin: 0;
   }
 
   .navigation__item--header a {
