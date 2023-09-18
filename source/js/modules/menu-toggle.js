@@ -20,19 +20,20 @@ const onToggleClick = (evt) => {
 
   header.classList.toggle('show-menu');
   body.classList.toggle('is-active');
-  isFocusLocked = !isFocusLocked;
 
   if (isFocusLocked) {
     window.focusLock.unlock('.header');
   } else {
     window.focusLock.lock('.header');
   }
+  isFocusLocked = !isFocusLocked;
 };
 
 const onCloseMenuClick = () => {
   header.classList.remove('show-menu');
   body.classList.remove('is-active');
   window.focusLock.unlock('.header');
+  isFocusLocked = false;
 };
 
 export const getMenuToggle = () => {
