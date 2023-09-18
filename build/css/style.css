@@ -2679,10 +2679,10 @@ button,
     background-color: transparent;
     cursor: pointer;
     padding: 0;
-    padding-top: 12px;
+    margin-top: 12px;
   }
   .show-menu .navigation__toggle {
-    padding: 0;
+    margin: 0;
   }
   .nojs .navigation__toggle svg {
     display: none;
@@ -5398,7 +5398,7 @@ button,
 }
 @media (max-width: 767px) {
   .connection__wrapper {
-    gap: 22px;
+    gap: 30px;
   }
 }
 
@@ -5475,28 +5475,26 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 28px;
+    gap: 32px;
   }
 }
 
 .connection__item {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "icon title" "icon link";
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 8px;
+  padding-left: 56px;
 }
 @media (max-width: 1199px) {
   .connection__item {
     gap: 6px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    padding-left: 34px;
   }
 }
 @media (max-width: 767px) {
@@ -5505,20 +5503,46 @@ button,
     grid-template-columns: 26px 1fr;
   }
 }
+.connection__item a {
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+}
+@media (max-width: 1199px) {
+  .connection__item a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .connection__item a {
+    line-height: 20px;
+    max-width: 160px;
+  }
+}
+@media (hover: hover) {
+  .connection__item a:hover:not(:disabled) {
+    color: #1c3374;
+  }
+}
+.connection__item a:focus:not(:disabled) {
+  color: #1c3374;
+}
+@media (hover: hover) {
+  .connection__item a:active:not(:disabled) {
+    color: #0266c1;
+  }
+}
 .connection__item svg {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  grid-area: icon;
-  margin-right: 21px;
-  margin-top: 12px;
+  position: absolute;
+  top: 12px;
+  left: 0;
 }
 @media (max-width: 1199px) {
   .connection__item svg {
+    top: 0;
     width: 24px;
     height: 24px;
-    margin-right: 4px;
-    margin-top: 0;
   }
 }
 @media (max-width: 767px) {
@@ -5527,12 +5551,26 @@ button,
     height: 22px;
   }
 }
+.connection__item span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d383f;
+}
+@media (max-width: 1199px) {
+  .connection__item span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .connection__item span {
+    line-height: 20px;
+    max-width: 160px;
+  }
+}
 .connection__item h3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   margin: 0;
   padding: 0;
-  grid-area: title;
   font-size: 18px;
   line-height: 18px;
 }
@@ -5546,76 +5584,6 @@ button,
   .connection__item h3 {
     font-size: 14px;
     line-height: 14px;
-  }
-}
-
-.connection__contact {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  grid-area: link;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
-}
-@media (max-width: 767px) {
-  .connection__contact {
-    max-width: 160px;
-  }
-}
-
-.connection__contact-item a {
-  font-size: 16px;
-  line-height: 24px;
-  color: #2d383f;
-  outline: none;
-}
-@media (max-width: 1199px) {
-  .connection__contact-item a {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-@media (max-width: 767px) {
-  .connection__contact-item a {
-    line-height: 20px;
-    max-width: 160px;
-  }
-}
-@media (hover: hover) {
-  .connection__contact-item a:hover:not(:disabled) {
-    color: #1c3374;
-  }
-}
-.connection__contact-item a:focus:not(:disabled) {
-  color: #1c3374;
-}
-@media (hover: hover) {
-  .connection__contact-item a:active:not(:disabled) {
-    color: #0266c1;
-  }
-}
-.connection__contact-item span {
-  font-size: 16px;
-  line-height: 24px;
-  color: #2d383f;
-}
-@media (max-width: 1199px) {
-  .connection__contact-item span {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-@media (max-width: 767px) {
-  .connection__contact-item span {
-    line-height: 20px;
   }
 }
 

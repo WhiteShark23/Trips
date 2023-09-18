@@ -4,6 +4,14 @@ const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const linkHeaderElements = header.querySelectorAll('.navigation__item');
 
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+const onDocumentEscKeydown = (evt) => {
+  if (isEscapeKey(evt)) {
+    onCloseMenuClick();
+  }
+};
+
 const onToggleClick = (evt) => {
   evt.preventDefault();
 
@@ -23,6 +31,7 @@ export const getMenuToggle = () => {
 
   if (btnHeaderElement) {
     btnHeaderElement.addEventListener('click', onToggleClick);
+    document.addEventListener('keydown', onDocumentEscKeydown);
   }
 };
 
