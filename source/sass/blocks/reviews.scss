@@ -30,7 +30,7 @@
   margin-left: -205px;
 
   @include vp-1199 {
-    margin-left: 0;
+    margin-left: calc(-50% - 368px);
     margin-bottom: 88px;
   }
 

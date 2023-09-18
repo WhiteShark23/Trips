@@ -2727,6 +2727,19 @@ button,
     border-color: transparent;
   }
 }
+@media (hover: hover) {
+  .show-menu .navigation__item a:hover:not(:disabled) {
+    opacity: 0.3;
+  }
+}
+.show-menu .navigation__item a:focus:not(:disabled) {
+  opacity: 0.3;
+}
+@media (hover: hover) {
+  .show-menu .navigation__item a:active:not(:disabled) {
+    opacity: 0.5;
+  }
+}
 @media (max-width: 1199px) {
   .navigation__item--header a {
     color: #2d383f;
@@ -4666,7 +4679,7 @@ button,
 }
 @media (max-width: 1199px) {
   .reviews__swiper-wrapper {
-    margin-left: 0;
+    margin-left: calc(-50% - 368px);
     margin-bottom: 88px;
   }
 }

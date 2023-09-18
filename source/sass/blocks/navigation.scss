@@ -126,6 +126,16 @@
     @include active {
       border-color: transparent;
     }
+
+    .show-menu & {
+      @include hover-focus {
+        opacity: 0.3;
+      }
+
+      @include active {
+        opacity: 0.5;
+      }
+    }
   }
 
   &--header {
