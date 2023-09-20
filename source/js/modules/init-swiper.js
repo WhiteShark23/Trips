@@ -98,22 +98,11 @@ export const initSwiperEducation = () => {
 
 export const initSwiperReviews = () => {
   const swiperReviews = new window.Swiper('.reviews__swiper', {
+    spaceBetween: 30,
     breakpoints: {
-      320: {
-        allowTouchMove: true,
-        spaceBetween: 30,
-        slidesPerView: 1,
-      },
       768: {
         allowTouchMove: false,
         slidesPerView: 'auto',
-        spaceBetween: 30,
-      },
-      1200: {
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        allowTouchMove: false,
-        spaceBetween: 30,
       },
     },
     navigation: {

@@ -2092,6 +2092,7 @@ button,
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  overflow-x: hidden;
 }
 .wrapper .header,
 .wrapper .footer {
@@ -4637,10 +4638,8 @@ button,
   }
 }
 
-@media (max-width: 767px) {
-  .reviews__swiper {
-    padding: 0 15px;
-  }
+.reviews__swiper {
+  overflow: visible;
 }
 
 .reviews__title {
@@ -4674,16 +4673,9 @@ button,
 .reviews__swiper-wrapper {
   margin-top: 27px;
   margin-bottom: 137px;
-  margin-left: -205px;
-}
-@media (max-width: 1289px) {
-  .reviews__swiper-wrapper {
-    margin-left: calc(440px - 50%);
-  }
 }
 @media (max-width: 1199px) {
   .reviews__swiper-wrapper {
-    margin-left: calc(325px - 50%);
     margin-bottom: 88px;
   }
 }
@@ -4691,7 +4683,6 @@ button,
   .reviews__swiper-wrapper {
     padding: 0;
     margin-top: 30px;
-    margin-left: 0;
     margin-bottom: 67px;
   }
 }
